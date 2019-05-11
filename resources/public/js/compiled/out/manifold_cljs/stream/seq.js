@@ -20,16 +20,16 @@ this.__drainedCallbacks = __drainedCallbacks;
 });
 manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventStream$ = cljs.core.PROTOCOL_SENTINEL;
 
-manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventStream$downstream$arity$1 = (function (this__22291__auto__){
+manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventStream$downstream$arity$1 = (function (this__22524__auto__){
 var self__ = this;
-var this__22291__auto____$1 = this;
-return manifold_cljs.stream.graph.downstream.call(null,this__22291__auto____$1);
+var this__22524__auto____$1 = this;
+return manifold_cljs.stream.graph.downstream.call(null,this__22524__auto____$1);
 });
 
-manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventStream$weakHandle$arity$2 = (function (this__22291__auto__,ref_queue__22292__auto__){
+manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventStream$weakHandle$arity$2 = (function (this__22524__auto__,ref_queue__22525__auto__){
 var self__ = this;
-var this__22291__auto____$1 = this;
-return this__22291__auto____$1;
+var this__22524__auto____$1 = this;
+return this__22524__auto____$1;
 });
 
 manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventStream$close$arity$1 = (function (_){
@@ -58,33 +58,33 @@ return null;
 
 manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventSource$ = cljs.core.PROTOCOL_SENTINEL;
 
-manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventSource$isDrained$arity$1 = (function (this__22295__auto__){
+manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventSource$isDrained$arity$1 = (function (this__22528__auto__){
 var self__ = this;
-var this__22295__auto____$1 = this;
+var this__22528__auto____$1 = this;
 return self__.__isDrained;
 });
 
-manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventSource$onDrained$arity$2 = (function (this__22295__auto__,callback__22296__auto__){
+manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventSource$onDrained$arity$2 = (function (this__22528__auto__,callback__22529__auto__){
 var self__ = this;
-var this__22295__auto____$1 = this;
+var this__22528__auto____$1 = this;
 if(cljs.core.truth_(self__.__isDrained)){
-return callback__22296__auto__.call(null);
+return callback__22529__auto__.call(null);
 } else {
-return self__.__drainedCallbacks.push(callback__22296__auto__);
+return self__.__drainedCallbacks.push(callback__22529__auto__);
 }
 });
 
-manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventSource$markDrained$arity$1 = (function (this__22295__auto__){
+manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventSource$markDrained$arity$1 = (function (this__22528__auto__){
 var self__ = this;
-var this__22295__auto____$1 = this;
+var this__22528__auto____$1 = this;
 self__.__isDrained = true;
 
 return manifold_cljs.utils.invoke_callbacks.call(null,self__.__drainedCallbacks);
 });
 
-manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventSource$connector$arity$2 = (function (this__22295__auto__,___22297__auto__){
+manifold_cljs.stream.seq.SeqSource.prototype.manifold_cljs$stream$core$IEventSource$connector$arity$2 = (function (this__22528__auto__,___22530__auto__){
 var self__ = this;
-var this__22295__auto____$1 = this;
+var this__22528__auto____$1 = this;
 return null;
 });
 
@@ -102,15 +102,15 @@ cljs.core.swap_BANG_.call(null,self__.s_ref,cljs.core.rest);
 
 return x;
 }
-}catch (e22805){if((e22805 instanceof Error)){
-var e = e22805;
+}catch (e23392){if((e23392 instanceof Error)){
+var e = e23392;
 manifold_cljs.impl.logging.error.call(null,e,"error in seq stream");
 
 manifold_cljs.stream.core.markDrained.call(null,this$__$1);
 
 return default_val;
 } else {
-throw e22805;
+throw e23392;
 
 }
 }})();
@@ -159,4 +159,4 @@ var s_SINGLEQUOTE_ = ((cljs.core.seq_QMARK_.call(null,s))?s:((cljs.core.seqable_
 return manifold_cljs.stream.seq.__GT_SeqSource.call(null,cljs.core.atom.call(null,s_SINGLEQUOTE_));
 });
 
-//# sourceMappingURL=seq.js.map?rel=1557580546049
+//# sourceMappingURL=seq.js.map?rel=1557582875769

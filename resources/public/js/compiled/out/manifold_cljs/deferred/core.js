@@ -109,8 +109,8 @@ throw cljs.core.missing_protocol.call(null,"IDeferred.errorValue",this$);
 manifold_cljs.deferred.core.IMutableDeferred = function(){};
 
 manifold_cljs.deferred.core.success = (function manifold_cljs$deferred$core$success(var_args){
-var G__21784 = arguments.length;
-switch (G__21784) {
+var G__21785 = arguments.length;
+switch (G__21785) {
 case 2:
 return manifold_cljs.deferred.core.success.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -167,8 +167,8 @@ manifold_cljs.deferred.core.success.cljs$lang$maxFixedArity = 3;
 
 
 manifold_cljs.deferred.core.error = (function manifold_cljs$deferred$core$error(var_args){
-var G__21786 = arguments.length;
-switch (G__21786) {
+var G__21787 = arguments.length;
+switch (G__21787) {
 case 2:
 return manifold_cljs.deferred.core.error.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -371,8 +371,8 @@ return (new manifold_cljs.deferred.core.Listener(on_success,on_error));
  * Creates a listener which can be registered or cancelled via `add-listener!` and `cancel-listener!`.
  */
 manifold_cljs.deferred.core.listener = (function manifold_cljs$deferred$core$listener(var_args){
-var G__21790 = arguments.length;
-switch (G__21790) {
+var G__21791 = arguments.length;
+switch (G__21791) {
 case 1:
 return manifold_cljs.deferred.core.listener.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -400,4 +400,4 @@ return (new manifold_cljs.deferred.core.Listener(on_success,on_error));
 manifold_cljs.deferred.core.listener.cljs$lang$maxFixedArity = 2;
 
 
-//# sourceMappingURL=core.js.map?rel=1557580542459
+//# sourceMappingURL=core.js.map?rel=1557582870888

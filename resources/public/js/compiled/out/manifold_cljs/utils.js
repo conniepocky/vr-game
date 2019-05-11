@@ -12,11 +12,11 @@ var temp__5457__auto__ = manifold_cljs.impl.queue.poll.call(null,callbacks);
 if(cljs.core.truth_(temp__5457__auto__)){
 var c = temp__5457__auto__;
 try{c.call(null);
-}catch (e22336){if((e22336 instanceof Error)){
-var e_22337 = e22336;
-manifold_cljs.impl.logging.error.call(null,e_22337,"error in invoke-callbacks");
+}catch (e22573){if((e22573 instanceof Error)){
+var e_22574 = e22573;
+manifold_cljs.impl.logging.error.call(null,e_22574,"error in invoke-callbacks");
 } else {
-throw e22336;
+throw e22573;
 
 }
 }
@@ -29,4 +29,4 @@ break;
 }));
 });
 
-//# sourceMappingURL=utils.js.map?rel=1557580544252
+//# sourceMappingURL=utils.js.map?rel=1557582873175

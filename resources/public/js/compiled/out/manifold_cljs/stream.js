@@ -56,8 +56,8 @@ return cljs.core.native_satisfies_QMARK_.call(null,manifold_cljs.stream.core.Sou
  * default value is given, an exception is thrown.
  */
 manifold_cljs.stream.__GT_sink = (function manifold_cljs$stream$__GT_sink(var_args){
-var G__22838 = arguments.length;
-switch (G__22838) {
+var G__23661 = arguments.length;
+switch (G__23661) {
 case 1:
 return manifold_cljs.stream.__GT_sink.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -101,8 +101,8 @@ manifold_cljs.stream.__GT_sink.cljs$lang$maxFixedArity = 2;
  * default value is given, an exception is thrown.
  */
 manifold_cljs.stream.__GT_source = (function manifold_cljs$stream$__GT_source(var_args){
-var G__22842 = arguments.length;
-switch (G__22842) {
+var G__23665 = arguments.length;
+switch (G__23665) {
 case 1:
 return manifold_cljs.stream.__GT_source.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -463,82 +463,82 @@ return manifold_cljs.stream.core.put.call(null,sink,x,false);
  * pause. Guaranteed to be non-blocking.
  */
 manifold_cljs.stream.put_all_BANG_ = (function manifold_cljs$stream$put_all_BANG_(sink,msgs){
-var result__22085__auto__ = manifold_cljs.deferred.deferred.call(null);
-((function (result__22085__auto__){
-return (function manifold_cljs$stream$put_all_BANG__$_this__22086__auto__(result__22085__auto____$1,var22850){
-var msgs__$1 = var22850;
+var result__22143__auto__ = manifold_cljs.deferred.deferred.call(null);
+((function (result__22143__auto__){
+return (function manifold_cljs$stream$put_all_BANG__$_this__22144__auto__(result__22143__auto____$1,var23673){
+var msgs__$1 = var23673;
 while(true){
-var x22848 = (function (){try{if(cljs.core.empty_QMARK_.call(null,msgs__$1)){
+var x23671 = (function (){try{if(cljs.core.empty_QMARK_.call(null,msgs__$1)){
 return true;
 } else {
-return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.put_BANG_.call(null,sink,cljs.core.first.call(null,msgs__$1)),((function (msgs__$1,result__22085__auto__){
+return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.put_BANG_.call(null,sink,cljs.core.first.call(null,msgs__$1)),((function (msgs__$1,result__22143__auto__){
 return (function (result){
 if(cljs.core.truth_(result)){
 return manifold_cljs.deferred.recur.call(null,cljs.core.rest.call(null,msgs__$1));
 } else {
 return false;
 }
-});})(msgs__$1,result__22085__auto__))
+});})(msgs__$1,result__22143__auto__))
 );
 }
-}catch (e22851){if((e22851 instanceof Error)){
-var e__22087__auto__ = e22851;
-manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,e__22087__auto__);
+}catch (e23674){if((e23674 instanceof Error)){
+var e__22145__auto__ = e23674;
+manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,e__22145__auto__);
 
 return null;
 } else {
-throw e22851;
+throw e23674;
 
 }
 }})();
-if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x22848))){
-var d__22079__auto__ = x22848;
-var val22849 = manifold_cljs.deferred.success_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val22849)){
-var err__22088__auto__ = manifold_cljs.deferred.error_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22088__auto__)){
-return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x22848),((function (msgs__$1,err__22088__auto__,d__22079__auto__,val22849,x22848,result__22085__auto__){
-return (function (x__22089__auto__){
-if((x__22089__auto__ instanceof manifold_cljs.deferred.Recur)){
-return cljs.core.apply.call(null,manifold_cljs$stream$put_all_BANG__$_this__22086__auto__,result__22085__auto____$1,cljs.core.deref.call(null,x__22089__auto__));
+if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x23671))){
+var d__22137__auto__ = x23671;
+var val23672 = manifold_cljs.deferred.success_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val23672)){
+var err__22146__auto__ = manifold_cljs.deferred.error_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22146__auto__)){
+return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x23671),((function (msgs__$1,err__22146__auto__,d__22137__auto__,val23672,x23671,result__22143__auto__){
+return (function (x__22147__auto__){
+if((x__22147__auto__ instanceof manifold_cljs.deferred.Recur)){
+return cljs.core.apply.call(null,manifold_cljs$stream$put_all_BANG__$_this__22144__auto__,result__22143__auto____$1,cljs.core.deref.call(null,x__22147__auto__));
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x__22089__auto__);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x__22147__auto__);
 }
-});})(msgs__$1,err__22088__auto__,d__22079__auto__,val22849,x22848,result__22085__auto__))
-,((function (msgs__$1,err__22088__auto__,d__22079__auto__,val22849,x22848,result__22085__auto__){
-return (function (err__22088__auto____$1){
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto____$1);
-});})(msgs__$1,err__22088__auto__,d__22079__auto__,val22849,x22848,result__22085__auto__))
+});})(msgs__$1,err__22146__auto__,d__22137__auto__,val23672,x23671,result__22143__auto__))
+,((function (msgs__$1,err__22146__auto__,d__22137__auto__,val23672,x23671,result__22143__auto__){
+return (function (err__22146__auto____$1){
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto____$1);
+});})(msgs__$1,err__22146__auto__,d__22137__auto__,val23672,x23671,result__22143__auto__))
 );
 } else {
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto__);
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto__);
 }
 } else {
-if((val22849 instanceof manifold_cljs.deferred.Recur)){
-var val22849__$1 = cljs.core.deref.call(null,val22849);
-var G__22852 = cljs.core.nth.call(null,val22849__$1,(0));
-msgs__$1 = G__22852;
+if((val23672 instanceof manifold_cljs.deferred.Recur)){
+var val23672__$1 = cljs.core.deref.call(null,val23672);
+var G__23675 = cljs.core.nth.call(null,val23672__$1,(0));
+msgs__$1 = G__23675;
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,val22849);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,val23672);
 }
 }
 } else {
-if((x22848 instanceof manifold_cljs.deferred.Recur)){
-var G__22853 = cljs.core.nth.call(null,cljs.core.deref.call(null,x22848),(0));
-msgs__$1 = G__22853;
+if((x23671 instanceof manifold_cljs.deferred.Recur)){
+var G__23676 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23671),(0));
+msgs__$1 = G__23676;
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x22848);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x23671);
 
 }
 }
 break;
 }
-});})(result__22085__auto__))
-.call(null,result__22085__auto__,msgs);
+});})(result__22143__auto__))
+.call(null,result__22143__auto__,msgs);
 
-return result__22085__auto__;
+return result__22143__auto__;
 });
 /**
  * Puts a value into a stream if the put can successfully be completed in `timeout`
@@ -549,8 +549,8 @@ return result__22085__auto__;
  * between failure due to timeout and other failures.
  */
 manifold_cljs.stream.try_put_BANG_ = (function manifold_cljs$stream$try_put_BANG_(var_args){
-var G__22855 = arguments.length;
-switch (G__22855) {
+var G__23678 = arguments.length;
+switch (G__23678) {
 case 3:
 return manifold_cljs.stream.try_put_BANG_.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -583,8 +583,8 @@ manifold_cljs.stream.try_put_BANG_.cljs$lang$maxFixedArity = 4;
  * between actual `nil` values and failures.
  */
 manifold_cljs.stream.take_BANG_ = (function manifold_cljs$stream$take_BANG_(var_args){
-var G__22858 = arguments.length;
-switch (G__22858) {
+var G__23681 = arguments.length;
+switch (G__23681) {
 case 1:
 return manifold_cljs.stream.take_BANG_.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -618,8 +618,8 @@ manifold_cljs.stream.take_BANG_.cljs$lang$maxFixedArity = 2;
  * important to differentiate between actual `nil` values and failures.
  */
 manifold_cljs.stream.try_take_BANG_ = (function manifold_cljs$stream$try_take_BANG_(var_args){
-var G__22861 = arguments.length;
-switch (G__22861) {
+var G__23684 = arguments.length;
+switch (G__23684) {
 case 2:
 return manifold_cljs.stream.try_take_BANG_.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -656,8 +656,8 @@ manifold_cljs.stream.try_take_BANG_.cljs$lang$maxFixedArity = 4;
  * | `description` | describes the connection, useful for traversing the stream topology via `downstream`.
  */
 manifold_cljs.stream.connect = (function manifold_cljs$stream$connect(var_args){
-var G__22864 = arguments.length;
-switch (G__22864) {
+var G__23687 = arguments.length;
+switch (G__23687) {
 case 2:
 return manifold_cljs.stream.connect.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -703,8 +703,8 @@ manifold_cljs.stream.connect.cljs$lang$maxFixedArity = 3;
  * handle the deferreds returned by `put!` and `take!`.
  */
 manifold_cljs.stream.stream = (function manifold_cljs$stream$stream(var_args){
-var G__22867 = arguments.length;
-switch (G__22867) {
+var G__23690 = arguments.length;
+switch (G__23690) {
 case 0:
 return manifold_cljs.stream.stream.cljs$core$IFn$_invoke$arity$0();
 
@@ -959,15 +959,15 @@ return rsp;
 } else {
 return self__.constant_response;
 }
-}catch (e22869){if((e22869 instanceof Error)){
-var e = e22869;
+}catch (e23692){if((e23692 instanceof Error)){
+var e = e23692;
 manifold_cljs.impl.logging.error.call(null,e,"error in stream handler");
 
 manifold_cljs.stream.core.close.call(null,this$__$1);
 
 return manifold_cljs.deferred.success_deferred.call(null,false);
 } else {
-throw e22869;
+throw e23692;
 
 }
 }});
@@ -1017,24 +1017,24 @@ manifold_cljs.stream.__GT_Callback = (function manifold_cljs$stream$__GT_Callbac
 return (new manifold_cljs.stream.Callback(f,close_callback,downstream,constant_response));
 });
 
-var result_22870 = manifold_cljs.deferred.success_deferred.call(null,true);
+var result_23693 = manifold_cljs.deferred.success_deferred.call(null,true);
 /**
  * Feeds all messages from `source` into `callback`.
  * 
  *   Messages will be processed as quickly as the callback can be executed. Returns
  *   a deferred which yields `true` when `source` is exhausted.
  */
-manifold_cljs.stream.consume = ((function (result_22870){
+manifold_cljs.stream.consume = ((function (result_23693){
 return (function manifold_cljs$stream$consume(callback,source){
 var complete = manifold_cljs.deferred.deferred.call(null);
-manifold_cljs.stream.connect.call(null,source,(new manifold_cljs.stream.Callback(callback,((function (complete,result_22870){
+manifold_cljs.stream.connect.call(null,source,(new manifold_cljs.stream.Callback(callback,((function (complete,result_23693){
 return (function (){
 return manifold_cljs.deferred.success_BANG_.call(null,complete,true);
-});})(complete,result_22870))
-,null,result_22870)),null);
+});})(complete,result_23693))
+,null,result_23693)),null);
 
 return complete;
-});})(result_22870))
+});})(result_23693))
 ;
 /**
  * Feeds all messages from `source` into `callback`, which must return a deferred yielding
@@ -1046,8 +1046,8 @@ return complete;
 manifold_cljs.stream.consume_async = (function manifold_cljs$stream$consume_async(callback,source){
 var complete = manifold_cljs.deferred.deferred.call(null);
 var callback__$1 = ((function (complete){
-return (function (p1__22871_SHARP_){
-return manifold_cljs.deferred.chain.call(null,p1__22871_SHARP_,callback,((function (complete){
+return (function (p1__23694_SHARP_){
+return manifold_cljs.deferred.chain.call(null,p1__23694_SHARP_,callback,((function (complete){
 return (function (result){
 if(result === false){
 manifold_cljs.deferred.success_BANG_.call(null,complete,true);
@@ -1076,8 +1076,8 @@ return complete;
  * Returns a deferred which yields `true` when `src` is exhausted or `callback` yields `false`.
  */
 manifold_cljs.stream.connect_via = (function manifold_cljs$stream$connect_via(var_args){
-var G__22873 = arguments.length;
-switch (G__22873) {
+var G__23696 = arguments.length;
+switch (G__23696) {
 case 3:
 return manifold_cljs.stream.connect_via.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -1114,8 +1114,8 @@ return complete;
 manifold_cljs.stream.connect_via.cljs$lang$maxFixedArity = 4;
 
 manifold_cljs.stream.connect_via_proxy = (function manifold_cljs$stream$connect_via_proxy(var_args){
-var G__22877 = arguments.length;
-switch (G__22877) {
+var G__23700 = arguments.length;
+switch (G__23700) {
 case 3:
 return manifold_cljs.stream.connect_via_proxy.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -1146,8 +1146,8 @@ return manifold_cljs.deferred.success_BANG_.call(null,complete,true);
 });})(dst__$1,proxy__$1,complete))
 ;
 manifold_cljs.stream.connect.call(null,src,(new manifold_cljs.stream.Callback(((function (dst__$1,proxy__$1,complete,close_callback){
-return (function (p1__22875_SHARP_){
-return manifold_cljs.stream.put_BANG_.call(null,proxy__$1,p1__22875_SHARP_);
+return (function (p1__23698_SHARP_){
+return manifold_cljs.stream.put_BANG_.call(null,proxy__$1,p1__23698_SHARP_);
 });})(dst__$1,proxy__$1,complete,close_callback))
 ,close_callback,dst__$1,null)),options);
 
@@ -1165,8 +1165,8 @@ manifold_cljs.stream.drain_into = (function manifold_cljs$stream$drain_into(src,
 var dst__$1 = manifold_cljs.stream.__GT_sink.call(null,dst);
 var complete = manifold_cljs.deferred.deferred.call(null);
 manifold_cljs.stream.connect.call(null,src,(new manifold_cljs.stream.Callback(((function (dst__$1,complete){
-return (function (p1__22879_SHARP_){
-return manifold_cljs.stream.put_BANG_.call(null,dst__$1,p1__22879_SHARP_);
+return (function (p1__23702_SHARP_){
+return manifold_cljs.stream.put_BANG_.call(null,dst__$1,p1__23702_SHARP_);
 });})(dst__$1,complete))
 ,((function (dst__$1,complete){
 return (function (){
@@ -1202,15 +1202,15 @@ return manifold_cljs.stream.periodically_.call(null,stream,period,(period - cljs
 });})(d,cancel))
 );
 }
-}catch (e22880){if((e22880 instanceof Error)){
-var e = e22880;
+}catch (e23703){if((e23703 instanceof Error)){
+var e = e23703;
 cljs.core.deref.call(null,cancel).call(null);
 
 manifold_cljs.stream.close_BANG_.call(null,stream);
 
 return manifold_cljs.impl.logging.error.call(null,e,"error in 'periodically' callback");
 } else {
-throw e22880;
+throw e23703;
 
 }
 }});})(cancel))
@@ -1220,8 +1220,8 @@ throw e22880;
  * Creates a stream which emits the result of invoking `(f)` every `period` milliseconds.
  */
 manifold_cljs.stream.periodically = (function manifold_cljs$stream$periodically(var_args){
-var G__22882 = arguments.length;
-switch (G__22882) {
+var G__23705 = arguments.length;
+switch (G__23705) {
 case 3:
 return manifold_cljs.stream.periodically.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -1254,8 +1254,8 @@ manifold_cljs.stream.periodically.cljs$lang$maxFixedArity = 3;
  * may optionally be defined for the output source.
  */
 manifold_cljs.stream.transform = (function manifold_cljs$stream$transform(var_args){
-var G__22885 = arguments.length;
-switch (G__22885) {
+var G__23708 = arguments.length;
+switch (G__23708) {
 case 2:
 return manifold_cljs.stream.transform.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -1287,22 +1287,22 @@ manifold_cljs.stream.transform.cljs$lang$maxFixedArity = 3;
  * Equivalent to Clojure's `map`, but for streams instead of sequences.
  */
 manifold_cljs.stream.map = (function manifold_cljs$stream$map(var_args){
-var G__22892 = arguments.length;
-switch (G__22892) {
+var G__23715 = arguments.length;
+switch (G__23715) {
 case 2:
 return manifold_cljs.stream.map.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
 break;
 default:
 var args_arr__4514__auto__ = [];
-var len__4499__auto___22894 = arguments.length;
-var i__4500__auto___22895 = (0);
+var len__4499__auto___23717 = arguments.length;
+var i__4500__auto___23718 = (0);
 while(true){
-if((i__4500__auto___22895 < len__4499__auto___22894)){
-args_arr__4514__auto__.push((arguments[i__4500__auto___22895]));
+if((i__4500__auto___23718 < len__4499__auto___23717)){
+args_arr__4514__auto__.push((arguments[i__4500__auto___23718]));
 
-var G__22896 = (i__4500__auto___22895 + (1));
-i__4500__auto___22895 = G__22896;
+var G__23719 = (i__4500__auto___23718 + (1));
+i__4500__auto___23718 = G__23719;
 continue;
 } else {
 }
@@ -1327,19 +1327,19 @@ return manifold_cljs.stream.source_only.call(null,s_SINGLEQUOTE_);
 });
 
 manifold_cljs.stream.map.cljs$core$IFn$_invoke$arity$variadic = (function (f,s,rest){
-return manifold_cljs.stream.map.call(null,(function (p1__22887_SHARP_){
-return cljs.core.apply.call(null,f,p1__22887_SHARP_);
+return manifold_cljs.stream.map.call(null,(function (p1__23710_SHARP_){
+return cljs.core.apply.call(null,f,p1__23710_SHARP_);
 }),cljs.core.apply.call(null,manifold_cljs.stream.zip,s,rest));
 });
 
 /** @this {Function} */
-manifold_cljs.stream.map.cljs$lang$applyTo = (function (seq22889){
-var G__22890 = cljs.core.first.call(null,seq22889);
-var seq22889__$1 = cljs.core.next.call(null,seq22889);
-var G__22891 = cljs.core.first.call(null,seq22889__$1);
-var seq22889__$2 = cljs.core.next.call(null,seq22889__$1);
+manifold_cljs.stream.map.cljs$lang$applyTo = (function (seq23712){
+var G__23713 = cljs.core.first.call(null,seq23712);
+var seq23712__$1 = cljs.core.next.call(null,seq23712);
+var G__23714 = cljs.core.first.call(null,seq23712__$1);
+var seq23712__$2 = cljs.core.next.call(null,seq23712__$1);
 var self__4486__auto__ = this;
-return self__4486__auto__.cljs$core$IFn$_invoke$arity$variadic(G__22890,G__22891,seq22889__$2);
+return self__4486__auto__.cljs$core$IFn$_invoke$arity$variadic(G__23713,G__23714,seq23712__$2);
 });
 
 manifold_cljs.stream.map.cljs$lang$maxFixedArity = (2);
@@ -1352,8 +1352,8 @@ var s_SINGLEQUOTE_ = manifold_cljs.stream.stream.call(null);
 manifold_cljs.stream.connect_via.call(null,s,((function (s_SINGLEQUOTE_){
 return (function (msg){
 return manifold_cljs.deferred.catch_SINGLEQUOTE_.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,msg,((function (s_SINGLEQUOTE_){
-return (function (p1__22897_SHARP_){
-return manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,p1__22897_SHARP_);
+return (function (p1__23720_SHARP_){
+return manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,p1__23720_SHARP_);
 });})(s_SINGLEQUOTE_))
 ),((function (s_SINGLEQUOTE_){
 return (function (e){
@@ -1369,29 +1369,29 @@ return false;
 
 return manifold_cljs.stream.source_only.call(null,s_SINGLEQUOTE_);
 });
-var some_drained_QMARK__22917 = cljs.core.partial.call(null,cljs.core.some,new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("manifold-cljs.stream","drained","manifold-cljs.stream/drained",690040425),null], null), null));
+var some_drained_QMARK__23740 = cljs.core.partial.call(null,cljs.core.some,new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("manifold-cljs.stream","drained","manifold-cljs.stream/drained",690040425),null], null), null));
 /**
  * Takes n-many streams, and returns a single stream which will emit n-tuples representing
  *   a message from each stream.
  */
-manifold_cljs.stream.zip = ((function (some_drained_QMARK__22917){
+manifold_cljs.stream.zip = ((function (some_drained_QMARK__23740){
 return (function manifold_cljs$stream$zip(var_args){
-var G__22903 = arguments.length;
-switch (G__22903) {
+var G__23726 = arguments.length;
+switch (G__23726) {
 case 1:
 return manifold_cljs.stream.zip.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
 break;
 default:
 var args_arr__4514__auto__ = [];
-var len__4499__auto___22919 = arguments.length;
-var i__4500__auto___22920 = (0);
+var len__4499__auto___23742 = arguments.length;
+var i__4500__auto___23743 = (0);
 while(true){
-if((i__4500__auto___22920 < len__4499__auto___22919)){
-args_arr__4514__auto__.push((arguments[i__4500__auto___22920]));
+if((i__4500__auto___23743 < len__4499__auto___23742)){
+args_arr__4514__auto__.push((arguments[i__4500__auto___23743]));
 
-var G__22921 = (i__4500__auto___22920 + (1));
-i__4500__auto___22920 = G__22921;
+var G__23744 = (i__4500__auto___23743 + (1));
+i__4500__auto___23743 = G__23744;
 continue;
 } else {
 }
@@ -1402,79 +1402,79 @@ var argseq__4515__auto__ = (new cljs.core.IndexedSeq(args_arr__4514__auto__.slic
 return manifold_cljs.stream.zip.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__4515__auto__);
 
 }
-});})(some_drained_QMARK__22917))
+});})(some_drained_QMARK__23740))
 ;
 
-manifold_cljs.stream.zip.cljs$core$IFn$_invoke$arity$1 = ((function (some_drained_QMARK__22917){
+manifold_cljs.stream.zip.cljs$core$IFn$_invoke$arity$1 = ((function (some_drained_QMARK__23740){
 return (function (a){
 return manifold_cljs.stream.map.call(null,cljs.core.vector,a);
-});})(some_drained_QMARK__22917))
+});})(some_drained_QMARK__23740))
 ;
 
-manifold_cljs.stream.zip.cljs$core$IFn$_invoke$arity$variadic = ((function (some_drained_QMARK__22917){
+manifold_cljs.stream.zip.cljs$core$IFn$_invoke$arity$variadic = ((function (some_drained_QMARK__23740){
 return (function (a,rest){
 var srcs = cljs.core.list_STAR_.call(null,a,rest);
 var intermediates = cljs.core.repeatedly.call(null,cljs.core.count.call(null,srcs),manifold_cljs.stream.stream);
 var dst = manifold_cljs.stream.stream.call(null);
-var seq__22904_22922 = cljs.core.seq.call(null,cljs.core.map.call(null,cljs.core.list,srcs,intermediates));
-var chunk__22905_22923 = null;
-var count__22906_22924 = (0);
-var i__22907_22925 = (0);
+var seq__23727_23745 = cljs.core.seq.call(null,cljs.core.map.call(null,cljs.core.list,srcs,intermediates));
+var chunk__23728_23746 = null;
+var count__23729_23747 = (0);
+var i__23730_23748 = (0);
 while(true){
-if((i__22907_22925 < count__22906_22924)){
-var vec__22908_22926 = cljs.core._nth.call(null,chunk__22905_22923,i__22907_22925);
-var a_22927__$1 = cljs.core.nth.call(null,vec__22908_22926,(0),null);
-var b_22928 = cljs.core.nth.call(null,vec__22908_22926,(1),null);
-manifold_cljs.stream.connect_via.call(null,a_22927__$1,((function (seq__22904_22922,chunk__22905_22923,count__22906_22924,i__22907_22925,vec__22908_22926,a_22927__$1,b_22928,srcs,intermediates,dst,some_drained_QMARK__22917){
-return (function (p1__22898_SHARP_){
-return manifold_cljs.stream.put_BANG_.call(null,b_22928,p1__22898_SHARP_);
-});})(seq__22904_22922,chunk__22905_22923,count__22906_22924,i__22907_22925,vec__22908_22926,a_22927__$1,b_22928,srcs,intermediates,dst,some_drained_QMARK__22917))
-,b_22928,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"op","op",-1882987955),"zip"], null)], null));
+if((i__23730_23748 < count__23729_23747)){
+var vec__23731_23749 = cljs.core._nth.call(null,chunk__23728_23746,i__23730_23748);
+var a_23750__$1 = cljs.core.nth.call(null,vec__23731_23749,(0),null);
+var b_23751 = cljs.core.nth.call(null,vec__23731_23749,(1),null);
+manifold_cljs.stream.connect_via.call(null,a_23750__$1,((function (seq__23727_23745,chunk__23728_23746,count__23729_23747,i__23730_23748,vec__23731_23749,a_23750__$1,b_23751,srcs,intermediates,dst,some_drained_QMARK__23740){
+return (function (p1__23721_SHARP_){
+return manifold_cljs.stream.put_BANG_.call(null,b_23751,p1__23721_SHARP_);
+});})(seq__23727_23745,chunk__23728_23746,count__23729_23747,i__23730_23748,vec__23731_23749,a_23750__$1,b_23751,srcs,intermediates,dst,some_drained_QMARK__23740))
+,b_23751,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"op","op",-1882987955),"zip"], null)], null));
 
 
-var G__22929 = seq__22904_22922;
-var G__22930 = chunk__22905_22923;
-var G__22931 = count__22906_22924;
-var G__22932 = (i__22907_22925 + (1));
-seq__22904_22922 = G__22929;
-chunk__22905_22923 = G__22930;
-count__22906_22924 = G__22931;
-i__22907_22925 = G__22932;
+var G__23752 = seq__23727_23745;
+var G__23753 = chunk__23728_23746;
+var G__23754 = count__23729_23747;
+var G__23755 = (i__23730_23748 + (1));
+seq__23727_23745 = G__23752;
+chunk__23728_23746 = G__23753;
+count__23729_23747 = G__23754;
+i__23730_23748 = G__23755;
 continue;
 } else {
-var temp__5457__auto___22933 = cljs.core.seq.call(null,seq__22904_22922);
-if(temp__5457__auto___22933){
-var seq__22904_22934__$1 = temp__5457__auto___22933;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__22904_22934__$1)){
-var c__4319__auto___22935 = cljs.core.chunk_first.call(null,seq__22904_22934__$1);
-var G__22936 = cljs.core.chunk_rest.call(null,seq__22904_22934__$1);
-var G__22937 = c__4319__auto___22935;
-var G__22938 = cljs.core.count.call(null,c__4319__auto___22935);
-var G__22939 = (0);
-seq__22904_22922 = G__22936;
-chunk__22905_22923 = G__22937;
-count__22906_22924 = G__22938;
-i__22907_22925 = G__22939;
+var temp__5457__auto___23756 = cljs.core.seq.call(null,seq__23727_23745);
+if(temp__5457__auto___23756){
+var seq__23727_23757__$1 = temp__5457__auto___23756;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__23727_23757__$1)){
+var c__4319__auto___23758 = cljs.core.chunk_first.call(null,seq__23727_23757__$1);
+var G__23759 = cljs.core.chunk_rest.call(null,seq__23727_23757__$1);
+var G__23760 = c__4319__auto___23758;
+var G__23761 = cljs.core.count.call(null,c__4319__auto___23758);
+var G__23762 = (0);
+seq__23727_23745 = G__23759;
+chunk__23728_23746 = G__23760;
+count__23729_23747 = G__23761;
+i__23730_23748 = G__23762;
 continue;
 } else {
-var vec__22911_22940 = cljs.core.first.call(null,seq__22904_22934__$1);
-var a_22941__$1 = cljs.core.nth.call(null,vec__22911_22940,(0),null);
-var b_22942 = cljs.core.nth.call(null,vec__22911_22940,(1),null);
-manifold_cljs.stream.connect_via.call(null,a_22941__$1,((function (seq__22904_22922,chunk__22905_22923,count__22906_22924,i__22907_22925,vec__22911_22940,a_22941__$1,b_22942,seq__22904_22934__$1,temp__5457__auto___22933,srcs,intermediates,dst,some_drained_QMARK__22917){
-return (function (p1__22898_SHARP_){
-return manifold_cljs.stream.put_BANG_.call(null,b_22942,p1__22898_SHARP_);
-});})(seq__22904_22922,chunk__22905_22923,count__22906_22924,i__22907_22925,vec__22911_22940,a_22941__$1,b_22942,seq__22904_22934__$1,temp__5457__auto___22933,srcs,intermediates,dst,some_drained_QMARK__22917))
-,b_22942,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"op","op",-1882987955),"zip"], null)], null));
+var vec__23734_23763 = cljs.core.first.call(null,seq__23727_23757__$1);
+var a_23764__$1 = cljs.core.nth.call(null,vec__23734_23763,(0),null);
+var b_23765 = cljs.core.nth.call(null,vec__23734_23763,(1),null);
+manifold_cljs.stream.connect_via.call(null,a_23764__$1,((function (seq__23727_23745,chunk__23728_23746,count__23729_23747,i__23730_23748,vec__23734_23763,a_23764__$1,b_23765,seq__23727_23757__$1,temp__5457__auto___23756,srcs,intermediates,dst,some_drained_QMARK__23740){
+return (function (p1__23721_SHARP_){
+return manifold_cljs.stream.put_BANG_.call(null,b_23765,p1__23721_SHARP_);
+});})(seq__23727_23745,chunk__23728_23746,count__23729_23747,i__23730_23748,vec__23734_23763,a_23764__$1,b_23765,seq__23727_23757__$1,temp__5457__auto___23756,srcs,intermediates,dst,some_drained_QMARK__23740))
+,b_23765,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"op","op",-1882987955),"zip"], null)], null));
 
 
-var G__22943 = cljs.core.next.call(null,seq__22904_22934__$1);
-var G__22944 = null;
-var G__22945 = (0);
-var G__22946 = (0);
-seq__22904_22922 = G__22943;
-chunk__22905_22923 = G__22944;
-count__22906_22924 = G__22945;
-i__22907_22925 = G__22946;
+var G__23766 = cljs.core.next.call(null,seq__23727_23757__$1);
+var G__23767 = null;
+var G__23768 = (0);
+var G__23769 = (0);
+seq__23727_23745 = G__23766;
+chunk__23728_23746 = G__23767;
+count__23729_23747 = G__23768;
+i__23730_23748 = G__23769;
 continue;
 }
 } else {
@@ -1483,99 +1483,99 @@ continue;
 break;
 }
 
-var result__22085__auto___22947 = manifold_cljs.deferred.deferred.call(null);
-((function (result__22085__auto___22947,srcs,intermediates,dst,some_drained_QMARK__22917){
-return (function manifold_cljs$stream$this__22086__auto__(result__22085__auto____$1){
+var result__22143__auto___23770 = manifold_cljs.deferred.deferred.call(null);
+((function (result__22143__auto___23770,srcs,intermediates,dst,some_drained_QMARK__23740){
+return (function manifold_cljs$stream$this__22144__auto__(result__22143__auto____$1){
 while(true){
-var x22914 = (function (){try{return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,cljs.core.apply.call(null,manifold_cljs.deferred.zip,cljs.core.map.call(null,((function (result__22085__auto___22947,srcs,intermediates,dst,some_drained_QMARK__22917){
-return (function (p1__22899_SHARP_){
-return manifold_cljs.stream.take_BANG_.call(null,p1__22899_SHARP_,new cljs.core.Keyword("manifold-cljs.stream","drained","manifold-cljs.stream/drained",690040425));
-});})(result__22085__auto___22947,srcs,intermediates,dst,some_drained_QMARK__22917))
-,intermediates)),((function (result__22085__auto___22947,srcs,intermediates,dst,some_drained_QMARK__22917){
+var x23737 = (function (){try{return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,cljs.core.apply.call(null,manifold_cljs.deferred.zip,cljs.core.map.call(null,((function (result__22143__auto___23770,srcs,intermediates,dst,some_drained_QMARK__23740){
+return (function (p1__23722_SHARP_){
+return manifold_cljs.stream.take_BANG_.call(null,p1__23722_SHARP_,new cljs.core.Keyword("manifold-cljs.stream","drained","manifold-cljs.stream/drained",690040425));
+});})(result__22143__auto___23770,srcs,intermediates,dst,some_drained_QMARK__23740))
+,intermediates)),((function (result__22143__auto___23770,srcs,intermediates,dst,some_drained_QMARK__23740){
 return (function (msgs){
-if(cljs.core.truth_(some_drained_QMARK__22917.call(null,msgs))){
+if(cljs.core.truth_(some_drained_QMARK__23740.call(null,msgs))){
 manifold_cljs.stream.close_BANG_.call(null,dst);
 
 return false;
 } else {
 return manifold_cljs.stream.put_BANG_.call(null,dst,msgs);
 }
-});})(result__22085__auto___22947,srcs,intermediates,dst,some_drained_QMARK__22917))
-,((function (result__22085__auto___22947,srcs,intermediates,dst,some_drained_QMARK__22917){
+});})(result__22143__auto___23770,srcs,intermediates,dst,some_drained_QMARK__23740))
+,((function (result__22143__auto___23770,srcs,intermediates,dst,some_drained_QMARK__23740){
 return (function (result){
 if(cljs.core.truth_(result)){
 return manifold_cljs.deferred.recur.call(null);
 } else {
 return null;
 }
-});})(result__22085__auto___22947,srcs,intermediates,dst,some_drained_QMARK__22917))
+});})(result__22143__auto___23770,srcs,intermediates,dst,some_drained_QMARK__23740))
 );
-}catch (e22916){if((e22916 instanceof Error)){
-var e__22087__auto__ = e22916;
-manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,e__22087__auto__);
+}catch (e23739){if((e23739 instanceof Error)){
+var e__22145__auto__ = e23739;
+manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,e__22145__auto__);
 
 return null;
 } else {
-throw e22916;
+throw e23739;
 
 }
 }})();
-if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x22914))){
-var d__22079__auto__ = x22914;
-var val22915 = manifold_cljs.deferred.success_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val22915)){
-var err__22088__auto__ = manifold_cljs.deferred.error_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22088__auto__)){
-return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x22914),((function (err__22088__auto__,d__22079__auto__,val22915,x22914,result__22085__auto___22947,srcs,intermediates,dst,some_drained_QMARK__22917){
-return (function (x__22089__auto__){
-if((x__22089__auto__ instanceof manifold_cljs.deferred.Recur)){
-return cljs.core.apply.call(null,manifold_cljs$stream$this__22086__auto__,result__22085__auto____$1,cljs.core.deref.call(null,x__22089__auto__));
+if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x23737))){
+var d__22137__auto__ = x23737;
+var val23738 = manifold_cljs.deferred.success_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val23738)){
+var err__22146__auto__ = manifold_cljs.deferred.error_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22146__auto__)){
+return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x23737),((function (err__22146__auto__,d__22137__auto__,val23738,x23737,result__22143__auto___23770,srcs,intermediates,dst,some_drained_QMARK__23740){
+return (function (x__22147__auto__){
+if((x__22147__auto__ instanceof manifold_cljs.deferred.Recur)){
+return cljs.core.apply.call(null,manifold_cljs$stream$this__22144__auto__,result__22143__auto____$1,cljs.core.deref.call(null,x__22147__auto__));
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x__22089__auto__);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x__22147__auto__);
 }
-});})(err__22088__auto__,d__22079__auto__,val22915,x22914,result__22085__auto___22947,srcs,intermediates,dst,some_drained_QMARK__22917))
-,((function (err__22088__auto__,d__22079__auto__,val22915,x22914,result__22085__auto___22947,srcs,intermediates,dst,some_drained_QMARK__22917){
-return (function (err__22088__auto____$1){
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto____$1);
-});})(err__22088__auto__,d__22079__auto__,val22915,x22914,result__22085__auto___22947,srcs,intermediates,dst,some_drained_QMARK__22917))
+});})(err__22146__auto__,d__22137__auto__,val23738,x23737,result__22143__auto___23770,srcs,intermediates,dst,some_drained_QMARK__23740))
+,((function (err__22146__auto__,d__22137__auto__,val23738,x23737,result__22143__auto___23770,srcs,intermediates,dst,some_drained_QMARK__23740){
+return (function (err__22146__auto____$1){
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto____$1);
+});})(err__22146__auto__,d__22137__auto__,val23738,x23737,result__22143__auto___23770,srcs,intermediates,dst,some_drained_QMARK__23740))
 );
 } else {
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto__);
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto__);
 }
 } else {
-if((val22915 instanceof manifold_cljs.deferred.Recur)){
-var val22915__$1 = cljs.core.deref.call(null,val22915);
+if((val23738 instanceof manifold_cljs.deferred.Recur)){
+var val23738__$1 = cljs.core.deref.call(null,val23738);
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,val22915);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,val23738);
 }
 }
 } else {
-if((x22914 instanceof manifold_cljs.deferred.Recur)){
+if((x23737 instanceof manifold_cljs.deferred.Recur)){
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x22914);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x23737);
 
 }
 }
 break;
 }
-});})(result__22085__auto___22947,srcs,intermediates,dst,some_drained_QMARK__22917))
-.call(null,result__22085__auto___22947);
+});})(result__22143__auto___23770,srcs,intermediates,dst,some_drained_QMARK__23740))
+.call(null,result__22143__auto___23770);
 
 
 return manifold_cljs.stream.source_only.call(null,dst);
-});})(some_drained_QMARK__22917))
+});})(some_drained_QMARK__23740))
 ;
 
 /** @this {Function} */
-manifold_cljs.stream.zip.cljs$lang$applyTo = ((function (some_drained_QMARK__22917){
-return (function (seq22901){
-var G__22902 = cljs.core.first.call(null,seq22901);
-var seq22901__$1 = cljs.core.next.call(null,seq22901);
+manifold_cljs.stream.zip.cljs$lang$applyTo = ((function (some_drained_QMARK__23740){
+return (function (seq23724){
+var G__23725 = cljs.core.first.call(null,seq23724);
+var seq23724__$1 = cljs.core.next.call(null,seq23724);
 var self__4486__auto__ = this;
-return self__4486__auto__.cljs$core$IFn$_invoke$arity$variadic(G__22902,seq22901__$1);
-});})(some_drained_QMARK__22917))
+return self__4486__auto__.cljs$core$IFn$_invoke$arity$variadic(G__23725,seq23724__$1);
+});})(some_drained_QMARK__23740))
 ;
 
 manifold_cljs.stream.zip.cljs$lang$maxFixedArity = (1);
@@ -1601,8 +1601,8 @@ return manifold_cljs.stream.source_only.call(null,s_SINGLEQUOTE_);
  * Equivalent to Clojure's `reductions`, but for streams instead of sequences.
  */
 manifold_cljs.stream.reductions = (function manifold_cljs$stream$reductions(var_args){
-var G__22949 = arguments.length;
-switch (G__22949) {
+var G__23772 = arguments.length;
+switch (G__23772) {
 case 2:
 return manifold_cljs.stream.reductions.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -1666,8 +1666,8 @@ manifold_cljs.stream.reductions.cljs$lang$maxFixedArity = 3;
  * functions returns a `reduced` value.
  */
 manifold_cljs.stream.reduce = (function manifold_cljs$stream$reduce(var_args){
-var G__22952 = arguments.length;
-switch (G__22952) {
+var G__23775 = arguments.length;
+switch (G__23775) {
 case 2:
 return manifold_cljs.stream.reduce.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -1691,12 +1691,12 @@ return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,((cljs.core.keyword_i
 if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037),initial_value__$1)){
 return f.call(null);
 } else {
-var result__22085__auto__ = manifold_cljs.deferred.deferred.call(null);
-((function (result__22085__auto__){
-return (function manifold_cljs$stream$this__22086__auto__(result__22085__auto____$1,var22955){
-var val = var22955;
+var result__22143__auto__ = manifold_cljs.deferred.deferred.call(null);
+((function (result__22143__auto__){
+return (function manifold_cljs$stream$this__22144__auto__(result__22143__auto____$1,var23778){
+var val = var23778;
 while(true){
-var x22953 = (function (){try{return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.take_BANG_.call(null,s,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037)),((function (val,result__22085__auto__){
+var x23776 = (function (){try{return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.take_BANG_.call(null,s,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037)),((function (val,result__22143__auto__){
 return (function (x){
 if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037),x)){
 return val;
@@ -1708,66 +1708,66 @@ return cljs.core.deref.call(null,r);
 return manifold_cljs.deferred.recur.call(null,r);
 }
 }
-});})(val,result__22085__auto__))
+});})(val,result__22143__auto__))
 );
-}catch (e22956){if((e22956 instanceof Error)){
-var e__22087__auto__ = e22956;
-manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,e__22087__auto__);
+}catch (e23779){if((e23779 instanceof Error)){
+var e__22145__auto__ = e23779;
+manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,e__22145__auto__);
 
 return null;
 } else {
-throw e22956;
+throw e23779;
 
 }
 }})();
-if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x22953))){
-var d__22079__auto__ = x22953;
-var val22954 = manifold_cljs.deferred.success_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val22954)){
-var err__22088__auto__ = manifold_cljs.deferred.error_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22088__auto__)){
-return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x22953),((function (val,err__22088__auto__,d__22079__auto__,val22954,x22953,result__22085__auto__){
-return (function (x__22089__auto__){
-if((x__22089__auto__ instanceof manifold_cljs.deferred.Recur)){
-return cljs.core.apply.call(null,manifold_cljs$stream$this__22086__auto__,result__22085__auto____$1,cljs.core.deref.call(null,x__22089__auto__));
+if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x23776))){
+var d__22137__auto__ = x23776;
+var val23777 = manifold_cljs.deferred.success_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val23777)){
+var err__22146__auto__ = manifold_cljs.deferred.error_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22146__auto__)){
+return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x23776),((function (val,err__22146__auto__,d__22137__auto__,val23777,x23776,result__22143__auto__){
+return (function (x__22147__auto__){
+if((x__22147__auto__ instanceof manifold_cljs.deferred.Recur)){
+return cljs.core.apply.call(null,manifold_cljs$stream$this__22144__auto__,result__22143__auto____$1,cljs.core.deref.call(null,x__22147__auto__));
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x__22089__auto__);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x__22147__auto__);
 }
-});})(val,err__22088__auto__,d__22079__auto__,val22954,x22953,result__22085__auto__))
-,((function (val,err__22088__auto__,d__22079__auto__,val22954,x22953,result__22085__auto__){
-return (function (err__22088__auto____$1){
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto____$1);
-});})(val,err__22088__auto__,d__22079__auto__,val22954,x22953,result__22085__auto__))
+});})(val,err__22146__auto__,d__22137__auto__,val23777,x23776,result__22143__auto__))
+,((function (val,err__22146__auto__,d__22137__auto__,val23777,x23776,result__22143__auto__){
+return (function (err__22146__auto____$1){
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto____$1);
+});})(val,err__22146__auto__,d__22137__auto__,val23777,x23776,result__22143__auto__))
 );
 } else {
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto__);
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto__);
 }
 } else {
-if((val22954 instanceof manifold_cljs.deferred.Recur)){
-var val22954__$1 = cljs.core.deref.call(null,val22954);
-var G__22958 = cljs.core.nth.call(null,val22954__$1,(0));
-val = G__22958;
+if((val23777 instanceof manifold_cljs.deferred.Recur)){
+var val23777__$1 = cljs.core.deref.call(null,val23777);
+var G__23781 = cljs.core.nth.call(null,val23777__$1,(0));
+val = G__23781;
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,val22954);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,val23777);
 }
 }
 } else {
-if((x22953 instanceof manifold_cljs.deferred.Recur)){
-var G__22959 = cljs.core.nth.call(null,cljs.core.deref.call(null,x22953),(0));
-val = G__22959;
+if((x23776 instanceof manifold_cljs.deferred.Recur)){
+var G__23782 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23776),(0));
+val = G__23782;
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x22953);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x23776);
 
 }
 }
 break;
 }
-});})(result__22085__auto__))
-.call(null,result__22085__auto__,initial_value__$1);
+});})(result__22143__auto__))
+.call(null,result__22143__auto__,initial_value__$1);
 
-return result__22085__auto__;
+return result__22143__auto__;
 }
 }));
 });
@@ -1778,22 +1778,22 @@ manifold_cljs.stream.reduce.cljs$lang$maxFixedArity = 3;
  * Equivalent to Clojure's `mapcat`, but for streams instead of sequences.
  */
 manifold_cljs.stream.mapcat = (function manifold_cljs$stream$mapcat(var_args){
-var G__22965 = arguments.length;
-switch (G__22965) {
+var G__23788 = arguments.length;
+switch (G__23788) {
 case 2:
 return manifold_cljs.stream.mapcat.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
 break;
 default:
 var args_arr__4514__auto__ = [];
-var len__4499__auto___22971 = arguments.length;
-var i__4500__auto___22972 = (0);
+var len__4499__auto___23794 = arguments.length;
+var i__4500__auto___23795 = (0);
 while(true){
-if((i__4500__auto___22972 < len__4499__auto___22971)){
-args_arr__4514__auto__.push((arguments[i__4500__auto___22972]));
+if((i__4500__auto___23795 < len__4499__auto___23794)){
+args_arr__4514__auto__.push((arguments[i__4500__auto___23795]));
 
-var G__22973 = (i__4500__auto___22972 + (1));
-i__4500__auto___22972 = G__22973;
+var G__23796 = (i__4500__auto___23795 + (1));
+i__4500__auto___23795 = G__23796;
 continue;
 } else {
 }
@@ -1810,78 +1810,78 @@ manifold_cljs.stream.mapcat.cljs$core$IFn$_invoke$arity$2 = (function (f,s){
 var s_SINGLEQUOTE_ = manifold_cljs.stream.stream.call(null);
 manifold_cljs.stream.connect_via.call(null,s,((function (s_SINGLEQUOTE_){
 return (function (msg){
-var result__22085__auto__ = manifold_cljs.deferred.deferred.call(null);
-((function (result__22085__auto__,s_SINGLEQUOTE_){
-return (function manifold_cljs$stream$this__22086__auto__(result__22085__auto____$1,var22968){
-var s__$1 = var22968;
+var result__22143__auto__ = manifold_cljs.deferred.deferred.call(null);
+((function (result__22143__auto__,s_SINGLEQUOTE_){
+return (function manifold_cljs$stream$this__22144__auto__(result__22143__auto____$1,var23791){
+var s__$1 = var23791;
 while(true){
-var x22966 = (function (){try{if(cljs.core.empty_QMARK_.call(null,s__$1)){
+var x23789 = (function (){try{if(cljs.core.empty_QMARK_.call(null,s__$1)){
 return null;
 } else {
-return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,cljs.core.first.call(null,s__$1)),((function (s__$1,result__22085__auto__,s_SINGLEQUOTE_){
+return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,cljs.core.first.call(null,s__$1)),((function (s__$1,result__22143__auto__,s_SINGLEQUOTE_){
 return (function (_){
 return manifold_cljs.deferred.recur.call(null,cljs.core.rest.call(null,s__$1));
-});})(s__$1,result__22085__auto__,s_SINGLEQUOTE_))
+});})(s__$1,result__22143__auto__,s_SINGLEQUOTE_))
 );
 }
-}catch (e22969){if((e22969 instanceof Error)){
-var e__22087__auto__ = e22969;
-manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,e__22087__auto__);
+}catch (e23792){if((e23792 instanceof Error)){
+var e__22145__auto__ = e23792;
+manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,e__22145__auto__);
 
 return null;
 } else {
-throw e22969;
+throw e23792;
 
 }
 }})();
-if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x22966))){
-var d__22079__auto__ = x22966;
-var val22967 = manifold_cljs.deferred.success_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val22967)){
-var err__22088__auto__ = manifold_cljs.deferred.error_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22088__auto__)){
-return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x22966),((function (s__$1,err__22088__auto__,d__22079__auto__,val22967,x22966,result__22085__auto__,s_SINGLEQUOTE_){
-return (function (x__22089__auto__){
-if((x__22089__auto__ instanceof manifold_cljs.deferred.Recur)){
-return cljs.core.apply.call(null,manifold_cljs$stream$this__22086__auto__,result__22085__auto____$1,cljs.core.deref.call(null,x__22089__auto__));
+if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x23789))){
+var d__22137__auto__ = x23789;
+var val23790 = manifold_cljs.deferred.success_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val23790)){
+var err__22146__auto__ = manifold_cljs.deferred.error_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22146__auto__)){
+return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x23789),((function (s__$1,err__22146__auto__,d__22137__auto__,val23790,x23789,result__22143__auto__,s_SINGLEQUOTE_){
+return (function (x__22147__auto__){
+if((x__22147__auto__ instanceof manifold_cljs.deferred.Recur)){
+return cljs.core.apply.call(null,manifold_cljs$stream$this__22144__auto__,result__22143__auto____$1,cljs.core.deref.call(null,x__22147__auto__));
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x__22089__auto__);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x__22147__auto__);
 }
-});})(s__$1,err__22088__auto__,d__22079__auto__,val22967,x22966,result__22085__auto__,s_SINGLEQUOTE_))
-,((function (s__$1,err__22088__auto__,d__22079__auto__,val22967,x22966,result__22085__auto__,s_SINGLEQUOTE_){
-return (function (err__22088__auto____$1){
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto____$1);
-});})(s__$1,err__22088__auto__,d__22079__auto__,val22967,x22966,result__22085__auto__,s_SINGLEQUOTE_))
+});})(s__$1,err__22146__auto__,d__22137__auto__,val23790,x23789,result__22143__auto__,s_SINGLEQUOTE_))
+,((function (s__$1,err__22146__auto__,d__22137__auto__,val23790,x23789,result__22143__auto__,s_SINGLEQUOTE_){
+return (function (err__22146__auto____$1){
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto____$1);
+});})(s__$1,err__22146__auto__,d__22137__auto__,val23790,x23789,result__22143__auto__,s_SINGLEQUOTE_))
 );
 } else {
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto__);
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto__);
 }
 } else {
-if((val22967 instanceof manifold_cljs.deferred.Recur)){
-var val22967__$1 = cljs.core.deref.call(null,val22967);
-var G__22974 = cljs.core.nth.call(null,val22967__$1,(0));
-s__$1 = G__22974;
+if((val23790 instanceof manifold_cljs.deferred.Recur)){
+var val23790__$1 = cljs.core.deref.call(null,val23790);
+var G__23797 = cljs.core.nth.call(null,val23790__$1,(0));
+s__$1 = G__23797;
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,val22967);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,val23790);
 }
 }
 } else {
-if((x22966 instanceof manifold_cljs.deferred.Recur)){
-var G__22975 = cljs.core.nth.call(null,cljs.core.deref.call(null,x22966),(0));
-s__$1 = G__22975;
+if((x23789 instanceof manifold_cljs.deferred.Recur)){
+var G__23798 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23789),(0));
+s__$1 = G__23798;
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x22966);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x23789);
 
 }
 }
 break;
 }
-});})(result__22085__auto__,s_SINGLEQUOTE_))
-.call(null,result__22085__auto__,f.call(null,msg));
+});})(result__22143__auto__,s_SINGLEQUOTE_))
+.call(null,result__22143__auto__,f.call(null,msg));
 
-return result__22085__auto__;
+return result__22143__auto__;
 });})(s_SINGLEQUOTE_))
 ,s_SINGLEQUOTE_,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"op","op",-1882987955),"mapcat"], null)], null));
 
@@ -1889,19 +1889,19 @@ return manifold_cljs.stream.source_only.call(null,s_SINGLEQUOTE_);
 });
 
 manifold_cljs.stream.mapcat.cljs$core$IFn$_invoke$arity$variadic = (function (f,s,rest){
-return manifold_cljs.stream.mapcat.call(null,(function (p1__22960_SHARP_){
-return cljs.core.apply.call(null,f,p1__22960_SHARP_);
+return manifold_cljs.stream.mapcat.call(null,(function (p1__23783_SHARP_){
+return cljs.core.apply.call(null,f,p1__23783_SHARP_);
 }),cljs.core.apply.call(null,manifold_cljs.stream.zip,s,rest));
 });
 
 /** @this {Function} */
-manifold_cljs.stream.mapcat.cljs$lang$applyTo = (function (seq22962){
-var G__22963 = cljs.core.first.call(null,seq22962);
-var seq22962__$1 = cljs.core.next.call(null,seq22962);
-var G__22964 = cljs.core.first.call(null,seq22962__$1);
-var seq22962__$2 = cljs.core.next.call(null,seq22962__$1);
+manifold_cljs.stream.mapcat.cljs$lang$applyTo = (function (seq23785){
+var G__23786 = cljs.core.first.call(null,seq23785);
+var seq23785__$1 = cljs.core.next.call(null,seq23785);
+var G__23787 = cljs.core.first.call(null,seq23785__$1);
+var seq23785__$2 = cljs.core.next.call(null,seq23785__$1);
 var self__4486__auto__ = this;
-return self__4486__auto__.cljs$core$IFn$_invoke$arity$variadic(G__22963,G__22964,seq22962__$2);
+return self__4486__auto__.cljs$core$IFn$_invoke$arity$variadic(G__23786,G__23787,seq23785__$2);
 });
 
 manifold_cljs.stream.mapcat.cljs$lang$maxFixedArity = (2);
@@ -1918,13 +1918,13 @@ var in$ = manifold_cljs.stream.stream.call(null);
 var out = manifold_cljs.stream.stream.call(null);
 manifold_cljs.stream.connect_via_proxy.call(null,s,in$,out,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"op","op",-1882987955),"lazily-partition-by"], null)], null));
 
-var result__22085__auto___22982 = manifold_cljs.deferred.deferred.call(null);
-((function (result__22085__auto___22982,in$,out){
-return (function manifold_cljs$stream$lazily_partition_by_$_this__22086__auto__(result__22085__auto____$1,var22978,var22979){
-var prev = var22978;
-var s_SINGLEQUOTE_ = var22979;
+var result__22143__auto___23805 = manifold_cljs.deferred.deferred.call(null);
+((function (result__22143__auto___23805,in$,out){
+return (function manifold_cljs$stream$lazily_partition_by_$_this__22144__auto__(result__22143__auto____$1,var23801,var23802){
+var prev = var23801;
+var s_SINGLEQUOTE_ = var23802;
 while(true){
-var x22976 = (function (){try{return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.take_BANG_.call(null,in$,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037)),((function (prev,s_SINGLEQUOTE_,result__22085__auto___22982,in$,out){
+var x23799 = (function (){try{return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.take_BANG_.call(null,in$,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037)),((function (prev,s_SINGLEQUOTE_,result__22143__auto___23805,in$,out){
 return (function (msg){
 if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037),msg)){
 if(cljs.core.truth_(s_SINGLEQUOTE_)){
@@ -1935,8 +1935,8 @@ manifold_cljs.stream.close_BANG_.call(null,s_SINGLEQUOTE_);
 return manifold_cljs.stream.close_BANG_.call(null,out);
 } else {
 var curr = (function (){try{return f.call(null,msg);
-}catch (e22981){if((e22981 instanceof Error)){
-var e = e22981;
+}catch (e23804){if((e23804 instanceof Error)){
+var e = e23804;
 manifold_cljs.stream.close_BANG_.call(null,in$);
 
 manifold_cljs.stream.close_BANG_.call(null,out);
@@ -1945,7 +1945,7 @@ manifold_cljs.impl.logging.error.call(null,e,"error in lazily-partition-by");
 
 return new cljs.core.Keyword("manifold-cljs.stream","error","manifold-cljs.stream/error",-2108585929);
 } else {
-throw e22981;
+throw e23804;
 
 }
 }})();
@@ -1953,10 +1953,10 @@ if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-
 return null;
 } else {
 if(cljs.core._EQ_.call(null,prev,curr)){
-return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,msg),((function (prev,s_SINGLEQUOTE_,curr,result__22085__auto___22982,in$,out){
+return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,msg),((function (prev,s_SINGLEQUOTE_,curr,result__22143__auto___23805,in$,out){
 return (function (_){
 return manifold_cljs.deferred.recur.call(null,curr,s_SINGLEQUOTE_);
-});})(prev,s_SINGLEQUOTE_,curr,result__22085__auto___22982,in$,out))
+});})(prev,s_SINGLEQUOTE_,curr,result__22143__auto___23805,in$,out))
 );
 } else {
 var s_SINGLEQUOTE__SINGLEQUOTE_ = manifold_cljs.stream.stream.call(null);
@@ -1965,80 +1965,80 @@ manifold_cljs.stream.close_BANG_.call(null,s_SINGLEQUOTE_);
 } else {
 }
 
-return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.put_BANG_.call(null,out,s_SINGLEQUOTE__SINGLEQUOTE_),((function (prev,s_SINGLEQUOTE_,s_SINGLEQUOTE__SINGLEQUOTE_,curr,result__22085__auto___22982,in$,out){
+return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.put_BANG_.call(null,out,s_SINGLEQUOTE__SINGLEQUOTE_),((function (prev,s_SINGLEQUOTE_,s_SINGLEQUOTE__SINGLEQUOTE_,curr,result__22143__auto___23805,in$,out){
 return (function (_){
 return manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE__SINGLEQUOTE_,msg);
-});})(prev,s_SINGLEQUOTE_,s_SINGLEQUOTE__SINGLEQUOTE_,curr,result__22085__auto___22982,in$,out))
-,((function (prev,s_SINGLEQUOTE_,s_SINGLEQUOTE__SINGLEQUOTE_,curr,result__22085__auto___22982,in$,out){
+});})(prev,s_SINGLEQUOTE_,s_SINGLEQUOTE__SINGLEQUOTE_,curr,result__22143__auto___23805,in$,out))
+,((function (prev,s_SINGLEQUOTE_,s_SINGLEQUOTE__SINGLEQUOTE_,curr,result__22143__auto___23805,in$,out){
 return (function (_){
 return manifold_cljs.deferred.recur.call(null,curr,s_SINGLEQUOTE__SINGLEQUOTE_);
-});})(prev,s_SINGLEQUOTE_,s_SINGLEQUOTE__SINGLEQUOTE_,curr,result__22085__auto___22982,in$,out))
+});})(prev,s_SINGLEQUOTE_,s_SINGLEQUOTE__SINGLEQUOTE_,curr,result__22143__auto___23805,in$,out))
 );
 }
 }
 }
-});})(prev,s_SINGLEQUOTE_,result__22085__auto___22982,in$,out))
+});})(prev,s_SINGLEQUOTE_,result__22143__auto___23805,in$,out))
 );
-}catch (e22980){if((e22980 instanceof Error)){
-var e__22087__auto__ = e22980;
-manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,e__22087__auto__);
+}catch (e23803){if((e23803 instanceof Error)){
+var e__22145__auto__ = e23803;
+manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,e__22145__auto__);
 
 return null;
 } else {
-throw e22980;
+throw e23803;
 
 }
 }})();
-if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x22976))){
-var d__22079__auto__ = x22976;
-var val22977 = manifold_cljs.deferred.success_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val22977)){
-var err__22088__auto__ = manifold_cljs.deferred.error_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22088__auto__)){
-return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x22976),((function (prev,s_SINGLEQUOTE_,err__22088__auto__,d__22079__auto__,val22977,x22976,result__22085__auto___22982,in$,out){
-return (function (x__22089__auto__){
-if((x__22089__auto__ instanceof manifold_cljs.deferred.Recur)){
-return cljs.core.apply.call(null,manifold_cljs$stream$lazily_partition_by_$_this__22086__auto__,result__22085__auto____$1,cljs.core.deref.call(null,x__22089__auto__));
+if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x23799))){
+var d__22137__auto__ = x23799;
+var val23800 = manifold_cljs.deferred.success_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val23800)){
+var err__22146__auto__ = manifold_cljs.deferred.error_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22146__auto__)){
+return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x23799),((function (prev,s_SINGLEQUOTE_,err__22146__auto__,d__22137__auto__,val23800,x23799,result__22143__auto___23805,in$,out){
+return (function (x__22147__auto__){
+if((x__22147__auto__ instanceof manifold_cljs.deferred.Recur)){
+return cljs.core.apply.call(null,manifold_cljs$stream$lazily_partition_by_$_this__22144__auto__,result__22143__auto____$1,cljs.core.deref.call(null,x__22147__auto__));
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x__22089__auto__);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x__22147__auto__);
 }
-});})(prev,s_SINGLEQUOTE_,err__22088__auto__,d__22079__auto__,val22977,x22976,result__22085__auto___22982,in$,out))
-,((function (prev,s_SINGLEQUOTE_,err__22088__auto__,d__22079__auto__,val22977,x22976,result__22085__auto___22982,in$,out){
-return (function (err__22088__auto____$1){
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto____$1);
-});})(prev,s_SINGLEQUOTE_,err__22088__auto__,d__22079__auto__,val22977,x22976,result__22085__auto___22982,in$,out))
+});})(prev,s_SINGLEQUOTE_,err__22146__auto__,d__22137__auto__,val23800,x23799,result__22143__auto___23805,in$,out))
+,((function (prev,s_SINGLEQUOTE_,err__22146__auto__,d__22137__auto__,val23800,x23799,result__22143__auto___23805,in$,out){
+return (function (err__22146__auto____$1){
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto____$1);
+});})(prev,s_SINGLEQUOTE_,err__22146__auto__,d__22137__auto__,val23800,x23799,result__22143__auto___23805,in$,out))
 );
 } else {
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto__);
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto__);
 }
 } else {
-if((val22977 instanceof manifold_cljs.deferred.Recur)){
-var val22977__$1 = cljs.core.deref.call(null,val22977);
-var G__22983 = cljs.core.nth.call(null,val22977__$1,(0));
-var G__22984 = cljs.core.nth.call(null,val22977__$1,(1));
-prev = G__22983;
-s_SINGLEQUOTE_ = G__22984;
+if((val23800 instanceof manifold_cljs.deferred.Recur)){
+var val23800__$1 = cljs.core.deref.call(null,val23800);
+var G__23806 = cljs.core.nth.call(null,val23800__$1,(0));
+var G__23807 = cljs.core.nth.call(null,val23800__$1,(1));
+prev = G__23806;
+s_SINGLEQUOTE_ = G__23807;
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,val22977);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,val23800);
 }
 }
 } else {
-if((x22976 instanceof manifold_cljs.deferred.Recur)){
-var G__22985 = cljs.core.nth.call(null,cljs.core.deref.call(null,x22976),(0));
-var G__22986 = cljs.core.nth.call(null,cljs.core.deref.call(null,x22976),(1));
-prev = G__22985;
-s_SINGLEQUOTE_ = G__22986;
+if((x23799 instanceof manifold_cljs.deferred.Recur)){
+var G__23808 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23799),(0));
+var G__23809 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23799),(1));
+prev = G__23808;
+s_SINGLEQUOTE_ = G__23809;
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x22976);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x23799);
 
 }
 }
 break;
 }
-});})(result__22085__auto___22982,in$,out))
-.call(null,result__22085__auto___22982,new cljs.core.Keyword("manifold-cljs.stream","x","manifold-cljs.stream/x",-1320606944),null);
+});})(result__22143__auto___23805,in$,out))
+.call(null,result__22143__auto___23805,new cljs.core.Keyword("manifold-cljs.stream","x","manifold-cljs.stream/x",-1320606944),null);
 
 
 return manifold_cljs.stream.source_only.call(null,out);
@@ -2051,11 +2051,11 @@ var in$ = manifold_cljs.stream.stream.call(null);
 var out = manifold_cljs.stream.stream.call(null);
 manifold_cljs.stream.connect_via_proxy.call(null,s,in$,out,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"op","op",-1882987955),"concat"], null)], null));
 
-var result__22085__auto___22994 = manifold_cljs.deferred.deferred.call(null);
-((function (result__22085__auto___22994,in$,out){
-return (function manifold_cljs$stream$concat_$_this__22086__auto__(result__22085__auto____$1){
+var result__22143__auto___23817 = manifold_cljs.deferred.deferred.call(null);
+((function (result__22143__auto___23817,in$,out){
+return (function manifold_cljs$stream$concat_$_this__22144__auto__(result__22143__auto____$1){
 while(true){
-var x22987 = (function (){try{return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.take_BANG_.call(null,in$,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037)),((function (result__22085__auto___22994,in$,out){
+var x23810 = (function (){try{return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.take_BANG_.call(null,in$,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037)),((function (result__22143__auto___23817,in$,out){
 return (function (s_SINGLEQUOTE_){
 if(cljs.core.truth_(manifold_cljs.stream.closed_QMARK_.call(null,out))){
 return manifold_cljs.stream.close_BANG_.call(null,s_SINGLEQUOTE_);
@@ -2065,154 +2065,154 @@ manifold_cljs.stream.close_BANG_.call(null,out);
 
 return s_SINGLEQUOTE_;
 } else {
-var result__22085__auto____$2 = manifold_cljs.deferred.deferred.call(null);
-((function (result__22085__auto____$2,result__22085__auto___22994,in$,out){
-return (function manifold_cljs$stream$concat_$_this__22086__auto___$_this__22086__auto__(result__22085__auto____$3){
+var result__22143__auto____$2 = manifold_cljs.deferred.deferred.call(null);
+((function (result__22143__auto____$2,result__22143__auto___23817,in$,out){
+return (function manifold_cljs$stream$concat_$_this__22144__auto___$_this__22144__auto__(result__22143__auto____$3){
 while(true){
-var x22990 = (function (){try{return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.take_BANG_.call(null,s_SINGLEQUOTE_,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037)),((function (result__22085__auto____$2,result__22085__auto___22994,in$,out){
+var x23813 = (function (){try{return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.take_BANG_.call(null,s_SINGLEQUOTE_,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037)),((function (result__22143__auto____$2,result__22143__auto___23817,in$,out){
 return (function (msg){
 if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037),msg)){
 return msg;
 } else {
 return manifold_cljs.stream.put_BANG_.call(null,out,msg);
 }
-});})(result__22085__auto____$2,result__22085__auto___22994,in$,out))
-,((function (result__22085__auto____$2,result__22085__auto___22994,in$,out){
+});})(result__22143__auto____$2,result__22143__auto___23817,in$,out))
+,((function (result__22143__auto____$2,result__22143__auto___23817,in$,out){
 return (function (result){
-var G__22993 = result;
-if(cljs.core._EQ_.call(null,false,G__22993)){
+var G__23816 = result;
+if(cljs.core._EQ_.call(null,false,G__23816)){
 manifold_cljs.stream.close_BANG_.call(null,s_SINGLEQUOTE_);
 
 return manifold_cljs.stream.close_BANG_.call(null,in$);
 } else {
-if(cljs.core._EQ_.call(null,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037),G__22993)){
+if(cljs.core._EQ_.call(null,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037),G__23816)){
 return null;
 } else {
 return manifold_cljs.deferred.recur.call(null);
 
 }
 }
-});})(result__22085__auto____$2,result__22085__auto___22994,in$,out))
+});})(result__22143__auto____$2,result__22143__auto___23817,in$,out))
 );
-}catch (e22992){if((e22992 instanceof Error)){
-var e__22087__auto__ = e22992;
-manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$3,e__22087__auto__);
+}catch (e23815){if((e23815 instanceof Error)){
+var e__22145__auto__ = e23815;
+manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$3,e__22145__auto__);
 
 return null;
 } else {
-throw e22992;
+throw e23815;
 
 }
 }})();
-if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x22990))){
-var d__22079__auto__ = x22990;
-var val22991 = manifold_cljs.deferred.success_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val22991)){
-var err__22088__auto__ = manifold_cljs.deferred.error_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22088__auto__)){
-return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x22990),((function (err__22088__auto__,d__22079__auto__,val22991,x22990,result__22085__auto____$2,result__22085__auto___22994,in$,out){
-return (function (x__22089__auto__){
-if((x__22089__auto__ instanceof manifold_cljs.deferred.Recur)){
-return cljs.core.apply.call(null,manifold_cljs$stream$concat_$_this__22086__auto___$_this__22086__auto__,result__22085__auto____$3,cljs.core.deref.call(null,x__22089__auto__));
+if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x23813))){
+var d__22137__auto__ = x23813;
+var val23814 = manifold_cljs.deferred.success_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val23814)){
+var err__22146__auto__ = manifold_cljs.deferred.error_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22146__auto__)){
+return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x23813),((function (err__22146__auto__,d__22137__auto__,val23814,x23813,result__22143__auto____$2,result__22143__auto___23817,in$,out){
+return (function (x__22147__auto__){
+if((x__22147__auto__ instanceof manifold_cljs.deferred.Recur)){
+return cljs.core.apply.call(null,manifold_cljs$stream$concat_$_this__22144__auto___$_this__22144__auto__,result__22143__auto____$3,cljs.core.deref.call(null,x__22147__auto__));
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$3,x__22089__auto__);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$3,x__22147__auto__);
 }
-});})(err__22088__auto__,d__22079__auto__,val22991,x22990,result__22085__auto____$2,result__22085__auto___22994,in$,out))
-,((function (err__22088__auto__,d__22079__auto__,val22991,x22990,result__22085__auto____$2,result__22085__auto___22994,in$,out){
-return (function (err__22088__auto____$1){
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$3,err__22088__auto____$1);
-});})(err__22088__auto__,d__22079__auto__,val22991,x22990,result__22085__auto____$2,result__22085__auto___22994,in$,out))
+});})(err__22146__auto__,d__22137__auto__,val23814,x23813,result__22143__auto____$2,result__22143__auto___23817,in$,out))
+,((function (err__22146__auto__,d__22137__auto__,val23814,x23813,result__22143__auto____$2,result__22143__auto___23817,in$,out){
+return (function (err__22146__auto____$1){
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$3,err__22146__auto____$1);
+});})(err__22146__auto__,d__22137__auto__,val23814,x23813,result__22143__auto____$2,result__22143__auto___23817,in$,out))
 );
 } else {
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$3,err__22088__auto__);
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$3,err__22146__auto__);
 }
 } else {
-if((val22991 instanceof manifold_cljs.deferred.Recur)){
-var val22991__$1 = cljs.core.deref.call(null,val22991);
+if((val23814 instanceof manifold_cljs.deferred.Recur)){
+var val23814__$1 = cljs.core.deref.call(null,val23814);
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$3,val22991);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$3,val23814);
 }
 }
 } else {
-if((x22990 instanceof manifold_cljs.deferred.Recur)){
+if((x23813 instanceof manifold_cljs.deferred.Recur)){
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$3,x22990);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$3,x23813);
 
 }
 }
 break;
 }
-});})(result__22085__auto____$2,result__22085__auto___22994,in$,out))
-.call(null,result__22085__auto____$2);
+});})(result__22143__auto____$2,result__22143__auto___23817,in$,out))
+.call(null,result__22143__auto____$2);
 
-return result__22085__auto____$2;
+return result__22143__auto____$2;
 
 }
 }
-});})(result__22085__auto___22994,in$,out))
-,((function (result__22085__auto___22994,in$,out){
+});})(result__22143__auto___23817,in$,out))
+,((function (result__22143__auto___23817,in$,out){
 return (function (result){
 if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037),result)){
 return null;
 } else {
 return manifold_cljs.deferred.recur.call(null);
 }
-});})(result__22085__auto___22994,in$,out))
+});})(result__22143__auto___23817,in$,out))
 );
-}catch (e22989){if((e22989 instanceof Error)){
-var e__22087__auto__ = e22989;
-manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,e__22087__auto__);
+}catch (e23812){if((e23812 instanceof Error)){
+var e__22145__auto__ = e23812;
+manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,e__22145__auto__);
 
 return null;
 } else {
-throw e22989;
+throw e23812;
 
 }
 }})();
-if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x22987))){
-var d__22079__auto__ = x22987;
-var val22988 = manifold_cljs.deferred.success_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val22988)){
-var err__22088__auto__ = manifold_cljs.deferred.error_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22088__auto__)){
-return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x22987),((function (err__22088__auto__,d__22079__auto__,val22988,x22987,result__22085__auto___22994,in$,out){
-return (function (x__22089__auto__){
-if((x__22089__auto__ instanceof manifold_cljs.deferred.Recur)){
-return cljs.core.apply.call(null,manifold_cljs$stream$concat_$_this__22086__auto__,result__22085__auto____$1,cljs.core.deref.call(null,x__22089__auto__));
+if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x23810))){
+var d__22137__auto__ = x23810;
+var val23811 = manifold_cljs.deferred.success_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val23811)){
+var err__22146__auto__ = manifold_cljs.deferred.error_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22146__auto__)){
+return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x23810),((function (err__22146__auto__,d__22137__auto__,val23811,x23810,result__22143__auto___23817,in$,out){
+return (function (x__22147__auto__){
+if((x__22147__auto__ instanceof manifold_cljs.deferred.Recur)){
+return cljs.core.apply.call(null,manifold_cljs$stream$concat_$_this__22144__auto__,result__22143__auto____$1,cljs.core.deref.call(null,x__22147__auto__));
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x__22089__auto__);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x__22147__auto__);
 }
-});})(err__22088__auto__,d__22079__auto__,val22988,x22987,result__22085__auto___22994,in$,out))
-,((function (err__22088__auto__,d__22079__auto__,val22988,x22987,result__22085__auto___22994,in$,out){
-return (function (err__22088__auto____$1){
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto____$1);
-});})(err__22088__auto__,d__22079__auto__,val22988,x22987,result__22085__auto___22994,in$,out))
+});})(err__22146__auto__,d__22137__auto__,val23811,x23810,result__22143__auto___23817,in$,out))
+,((function (err__22146__auto__,d__22137__auto__,val23811,x23810,result__22143__auto___23817,in$,out){
+return (function (err__22146__auto____$1){
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto____$1);
+});})(err__22146__auto__,d__22137__auto__,val23811,x23810,result__22143__auto___23817,in$,out))
 );
 } else {
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto__);
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto__);
 }
 } else {
-if((val22988 instanceof manifold_cljs.deferred.Recur)){
-var val22988__$1 = cljs.core.deref.call(null,val22988);
+if((val23811 instanceof manifold_cljs.deferred.Recur)){
+var val23811__$1 = cljs.core.deref.call(null,val23811);
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,val22988);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,val23811);
 }
 }
 } else {
-if((x22987 instanceof manifold_cljs.deferred.Recur)){
+if((x23810 instanceof manifold_cljs.deferred.Recur)){
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x22987);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x23810);
 
 }
 }
 break;
 }
-});})(result__22085__auto___22994,in$,out))
-.call(null,result__22085__auto___22994);
+});})(result__22143__auto___23817,in$,out))
+.call(null,result__22143__auto___23817);
 
 
 return manifold_cljs.stream.source_only.call(null,out);
@@ -2345,9 +2345,9 @@ return (function (x){
 if(cljs.core.keyword_identical_QMARK_.call(null,default_val,x)){
 return x;
 } else {
-var vec__22995 = x;
-var size = cljs.core.nth.call(null,vec__22995,(0),null);
-var msg = cljs.core.nth.call(null,vec__22995,(1),null);
+var vec__23818 = x;
+var size = cljs.core.nth.call(null,vec__23818,(0),null);
+var msg = cljs.core.nth.call(null,vec__23818,(1),null);
 self__.buf_PLUS_.call(null,(- size));
 
 return msg;
@@ -2373,9 +2373,9 @@ return timeout_val;
 if(cljs.core.keyword_identical_QMARK_.call(null,default_val,x)){
 return x;
 } else {
-var vec__22998 = x;
-var size = cljs.core.nth.call(null,vec__22998,(0),null);
-var msg = cljs.core.nth.call(null,vec__22998,(1),null);
+var vec__23821 = x;
+var size = cljs.core.nth.call(null,vec__23821,(0),null);
+var msg = cljs.core.nth.call(null,vec__23821,(1),null);
 self__.buf_PLUS_.call(null,(- size));
 
 return msg;
@@ -2429,8 +2429,8 @@ return (new manifold_cljs.stream.BufferedStream(buf,limit,metric,description_fn,
  * is defined by `(metric message)`.
  */
 manifold_cljs.stream.buffered_stream = (function manifold_cljs$stream$buffered_stream(var_args){
-var G__23002 = arguments.length;
-switch (G__23002) {
+var G__23825 = arguments.length;
+switch (G__23825) {
 case 1:
 return manifold_cljs.stream.buffered_stream.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -2490,8 +2490,8 @@ manifold_cljs.stream.buffered_stream.cljs$lang$maxFixedArity = 3;
  * mapped over all messages currently buffered.
  */
 manifold_cljs.stream.buffer = (function manifold_cljs$stream$buffer(var_args){
-var G__23005 = arguments.length;
-switch (G__23005) {
+var G__23828 = arguments.length;
+switch (G__23828) {
 case 2:
 return manifold_cljs.stream.buffer.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -2528,8 +2528,8 @@ manifold_cljs.stream.buffer.cljs$lang$maxFixedArity = 3;
  * returns the size of each message may be defined.
  */
 manifold_cljs.stream.batch = (function manifold_cljs$stream$batch(var_args){
-var G__23008 = arguments.length;
-switch (G__23008) {
+var G__23831 = arguments.length;
+switch (G__23831) {
 case 2:
 return manifold_cljs.stream.batch.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -2572,34 +2572,34 @@ return manifold_cljs.stream.close_BANG_.call(null,buf);
 });})(buf,s_SINGLEQUOTE_))
 );
 
-var result__22085__auto___23020 = manifold_cljs.deferred.deferred.call(null);
-((function (result__22085__auto___23020,buf,s_SINGLEQUOTE_){
-return (function manifold_cljs$stream$this__22086__auto__(result__22085__auto____$1,var23011,var23012,var23013,var23014){
-var msgs = var23011;
-var size = var23012;
-var earliest_message = var23013;
-var last_message = var23014;
+var result__22143__auto___23843 = manifold_cljs.deferred.deferred.call(null);
+((function (result__22143__auto___23843,buf,s_SINGLEQUOTE_){
+return (function manifold_cljs$stream$this__22144__auto__(result__22143__auto____$1,var23834,var23835,var23836,var23837){
+var msgs = var23834;
+var size = var23835;
+var earliest_message = var23836;
+var last_message = var23837;
 while(true){
-var x23009 = (function (){try{if((((size === max_size)) || ((((max_size < size)) && ((cljs.core.count.call(null,msgs) === (1))))))){
-return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,msgs),((function (msgs,size,earliest_message,last_message,result__22085__auto___23020,buf,s_SINGLEQUOTE_){
+var x23832 = (function (){try{if((((size === max_size)) || ((((max_size < size)) && ((cljs.core.count.call(null,msgs) === (1))))))){
+return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,msgs),((function (msgs,size,earliest_message,last_message,result__22143__auto___23843,buf,s_SINGLEQUOTE_){
 return (function (_){
 return manifold_cljs.deferred.recur.call(null,cljs.core.PersistentVector.EMPTY,(0),(-1),(-1));
-});})(msgs,size,earliest_message,last_message,result__22085__auto___23020,buf,s_SINGLEQUOTE_))
+});})(msgs,size,earliest_message,last_message,result__22143__auto___23843,buf,s_SINGLEQUOTE_))
 );
 } else {
 if((size > max_size)){
 var msg = cljs.core.peek.call(null,msgs);
-return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,cljs.core.pop.call(null,msgs)),((function (msgs,size,earliest_message,last_message,msg,result__22085__auto___23020,buf,s_SINGLEQUOTE_){
+return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,cljs.core.pop.call(null,msgs)),((function (msgs,size,earliest_message,last_message,msg,result__22143__auto___23843,buf,s_SINGLEQUOTE_){
 return (function (_){
 return manifold_cljs.deferred.recur.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [msg], null),metric.call(null,msg),last_message,last_message);
-});})(msgs,size,earliest_message,last_message,msg,result__22085__auto___23020,buf,s_SINGLEQUOTE_))
+});})(msgs,size,earliest_message,last_message,msg,result__22143__auto___23843,buf,s_SINGLEQUOTE_))
 );
 } else {
-return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,(((((max_latency == null)) || ((earliest_message < (0))) || (cljs.core.empty_QMARK_.call(null,msgs))))?manifold_cljs.stream.take_BANG_.call(null,buf,new cljs.core.Keyword("manifold-cljs.stream","empty","manifold-cljs.stream/empty",-416244243)):manifold_cljs.stream.try_take_BANG_.call(null,buf,new cljs.core.Keyword("manifold-cljs.stream","empty","manifold-cljs.stream/empty",-416244243),(max_latency - (manifold_cljs.time.current_millis.call(null) - earliest_message)),new cljs.core.Keyword("manifold-cljs.stream","timeout","manifold-cljs.stream/timeout",-1410493479))),((function (msgs,size,earliest_message,last_message,result__22085__auto___23020,buf,s_SINGLEQUOTE_){
+return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,(((((max_latency == null)) || ((earliest_message < (0))) || (cljs.core.empty_QMARK_.call(null,msgs))))?manifold_cljs.stream.take_BANG_.call(null,buf,new cljs.core.Keyword("manifold-cljs.stream","empty","manifold-cljs.stream/empty",-416244243)):manifold_cljs.stream.try_take_BANG_.call(null,buf,new cljs.core.Keyword("manifold-cljs.stream","empty","manifold-cljs.stream/empty",-416244243),(max_latency - (manifold_cljs.time.current_millis.call(null) - earliest_message)),new cljs.core.Keyword("manifold-cljs.stream","timeout","manifold-cljs.stream/timeout",-1410493479))),((function (msgs,size,earliest_message,last_message,result__22143__auto___23843,buf,s_SINGLEQUOTE_){
 return (function (msg){
-var pred__23016 = cljs.core.keyword_identical_QMARK_;
-var expr__23017 = msg;
-if(cljs.core.truth_(pred__23016.call(null,new cljs.core.Keyword("manifold-cljs.stream","empty","manifold-cljs.stream/empty",-416244243),expr__23017))){
+var pred__23839 = cljs.core.keyword_identical_QMARK_;
+var expr__23840 = msg;
+if(cljs.core.truth_(pred__23839.call(null,new cljs.core.Keyword("manifold-cljs.stream","empty","manifold-cljs.stream/empty",-416244243),expr__23840))){
 if(cljs.core.empty_QMARK_.call(null,msgs)){
 } else {
 manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,msgs);
@@ -2607,90 +2607,90 @@ manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,msgs);
 
 return manifold_cljs.stream.close_BANG_.call(null,s_SINGLEQUOTE_);
 } else {
-if(cljs.core.truth_(pred__23016.call(null,new cljs.core.Keyword("manifold-cljs.stream","timeout","manifold-cljs.stream/timeout",-1410493479),expr__23017))){
-return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,((cljs.core.empty_QMARK_.call(null,msgs))?null:manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,msgs)),((function (msgs,size,earliest_message,last_message,pred__23016,expr__23017,result__22085__auto___23020,buf,s_SINGLEQUOTE_){
+if(cljs.core.truth_(pred__23839.call(null,new cljs.core.Keyword("manifold-cljs.stream","timeout","manifold-cljs.stream/timeout",-1410493479),expr__23840))){
+return manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,((cljs.core.empty_QMARK_.call(null,msgs))?null:manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,msgs)),((function (msgs,size,earliest_message,last_message,pred__23839,expr__23840,result__22143__auto___23843,buf,s_SINGLEQUOTE_){
 return (function (_){
 return manifold_cljs.deferred.recur.call(null,cljs.core.PersistentVector.EMPTY,(0),(-1),(-1));
-});})(msgs,size,earliest_message,last_message,pred__23016,expr__23017,result__22085__auto___23020,buf,s_SINGLEQUOTE_))
+});})(msgs,size,earliest_message,last_message,pred__23839,expr__23840,result__22143__auto___23843,buf,s_SINGLEQUOTE_))
 );
 } else {
 var time = manifold_cljs.time.current_millis.call(null);
 return manifold_cljs.deferred.recur.call(null,cljs.core.conj.call(null,msgs,msg),(size + metric.call(null,msg)),(((earliest_message < (0)))?time:earliest_message),time);
 }
 }
-});})(msgs,size,earliest_message,last_message,result__22085__auto___23020,buf,s_SINGLEQUOTE_))
+});})(msgs,size,earliest_message,last_message,result__22143__auto___23843,buf,s_SINGLEQUOTE_))
 );
 
 }
 }
-}catch (e23015){if((e23015 instanceof Error)){
-var e__22087__auto__ = e23015;
-manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,e__22087__auto__);
+}catch (e23838){if((e23838 instanceof Error)){
+var e__22145__auto__ = e23838;
+manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,e__22145__auto__);
 
 return null;
 } else {
-throw e23015;
+throw e23838;
 
 }
 }})();
-if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x23009))){
-var d__22079__auto__ = x23009;
-var val23010 = manifold_cljs.deferred.success_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val23010)){
-var err__22088__auto__ = manifold_cljs.deferred.error_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22088__auto__)){
-return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x23009),((function (msgs,size,earliest_message,last_message,err__22088__auto__,d__22079__auto__,val23010,x23009,result__22085__auto___23020,buf,s_SINGLEQUOTE_){
-return (function (x__22089__auto__){
-if((x__22089__auto__ instanceof manifold_cljs.deferred.Recur)){
-return cljs.core.apply.call(null,manifold_cljs$stream$this__22086__auto__,result__22085__auto____$1,cljs.core.deref.call(null,x__22089__auto__));
+if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x23832))){
+var d__22137__auto__ = x23832;
+var val23833 = manifold_cljs.deferred.success_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val23833)){
+var err__22146__auto__ = manifold_cljs.deferred.error_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22146__auto__)){
+return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x23832),((function (msgs,size,earliest_message,last_message,err__22146__auto__,d__22137__auto__,val23833,x23832,result__22143__auto___23843,buf,s_SINGLEQUOTE_){
+return (function (x__22147__auto__){
+if((x__22147__auto__ instanceof manifold_cljs.deferred.Recur)){
+return cljs.core.apply.call(null,manifold_cljs$stream$this__22144__auto__,result__22143__auto____$1,cljs.core.deref.call(null,x__22147__auto__));
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x__22089__auto__);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x__22147__auto__);
 }
-});})(msgs,size,earliest_message,last_message,err__22088__auto__,d__22079__auto__,val23010,x23009,result__22085__auto___23020,buf,s_SINGLEQUOTE_))
-,((function (msgs,size,earliest_message,last_message,err__22088__auto__,d__22079__auto__,val23010,x23009,result__22085__auto___23020,buf,s_SINGLEQUOTE_){
-return (function (err__22088__auto____$1){
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto____$1);
-});})(msgs,size,earliest_message,last_message,err__22088__auto__,d__22079__auto__,val23010,x23009,result__22085__auto___23020,buf,s_SINGLEQUOTE_))
+});})(msgs,size,earliest_message,last_message,err__22146__auto__,d__22137__auto__,val23833,x23832,result__22143__auto___23843,buf,s_SINGLEQUOTE_))
+,((function (msgs,size,earliest_message,last_message,err__22146__auto__,d__22137__auto__,val23833,x23832,result__22143__auto___23843,buf,s_SINGLEQUOTE_){
+return (function (err__22146__auto____$1){
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto____$1);
+});})(msgs,size,earliest_message,last_message,err__22146__auto__,d__22137__auto__,val23833,x23832,result__22143__auto___23843,buf,s_SINGLEQUOTE_))
 );
 } else {
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto__);
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto__);
 }
 } else {
-if((val23010 instanceof manifold_cljs.deferred.Recur)){
-var val23010__$1 = cljs.core.deref.call(null,val23010);
-var G__23021 = cljs.core.nth.call(null,val23010__$1,(0));
-var G__23022 = cljs.core.nth.call(null,val23010__$1,(1));
-var G__23023 = cljs.core.nth.call(null,val23010__$1,(2));
-var G__23024 = cljs.core.nth.call(null,val23010__$1,(3));
-msgs = G__23021;
-size = G__23022;
-earliest_message = G__23023;
-last_message = G__23024;
+if((val23833 instanceof manifold_cljs.deferred.Recur)){
+var val23833__$1 = cljs.core.deref.call(null,val23833);
+var G__23844 = cljs.core.nth.call(null,val23833__$1,(0));
+var G__23845 = cljs.core.nth.call(null,val23833__$1,(1));
+var G__23846 = cljs.core.nth.call(null,val23833__$1,(2));
+var G__23847 = cljs.core.nth.call(null,val23833__$1,(3));
+msgs = G__23844;
+size = G__23845;
+earliest_message = G__23846;
+last_message = G__23847;
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,val23010);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,val23833);
 }
 }
 } else {
-if((x23009 instanceof manifold_cljs.deferred.Recur)){
-var G__23025 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23009),(0));
-var G__23026 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23009),(1));
-var G__23027 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23009),(2));
-var G__23028 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23009),(3));
-msgs = G__23025;
-size = G__23026;
-earliest_message = G__23027;
-last_message = G__23028;
+if((x23832 instanceof manifold_cljs.deferred.Recur)){
+var G__23848 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23832),(0));
+var G__23849 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23832),(1));
+var G__23850 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23832),(2));
+var G__23851 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23832),(3));
+msgs = G__23848;
+size = G__23849;
+earliest_message = G__23850;
+last_message = G__23851;
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x23009);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x23832);
 
 }
 }
 break;
 }
-});})(result__22085__auto___23020,buf,s_SINGLEQUOTE_))
-.call(null,result__22085__auto___23020,cljs.core.PersistentVector.EMPTY,(0),(-1),(-1));
+});})(result__22143__auto___23843,buf,s_SINGLEQUOTE_))
+.call(null,result__22143__auto___23843,cljs.core.PersistentVector.EMPTY,(0),(-1),(-1));
 
 
 return manifold_cljs.stream.source_only.call(null,s_SINGLEQUOTE_);
@@ -2706,8 +2706,8 @@ manifold_cljs.stream.batch.cljs$lang$maxFixedArity = 4;
  * this is set to one second's worth.
  */
 manifold_cljs.stream.throttle = (function manifold_cljs$stream$throttle(var_args){
-var G__23030 = arguments.length;
-switch (G__23030) {
+var G__23853 = arguments.length;
+switch (G__23853) {
 case 2:
 return manifold_cljs.stream.throttle.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -2738,13 +2738,13 @@ return manifold_cljs.stream.close_BANG_.call(null,buf);
 });})(buf,s_SINGLEQUOTE_,period))
 );
 
-var result__22085__auto___23037 = manifold_cljs.deferred.deferred.call(null);
-((function (result__22085__auto___23037,buf,s_SINGLEQUOTE_,period){
-return (function manifold_cljs$stream$this__22086__auto__(result__22085__auto____$1,var23033,var23034){
-var backlog = var23033;
-var read_start = var23034;
+var result__22143__auto___23860 = manifold_cljs.deferred.deferred.call(null);
+((function (result__22143__auto___23860,buf,s_SINGLEQUOTE_,period){
+return (function manifold_cljs$stream$this__22144__auto__(result__22143__auto____$1,var23856,var23857){
+var backlog = var23856;
+var read_start = var23857;
 while(true){
-var x23031 = (function (){try{return manifold_cljs.deferred.chain.call(null,manifold_cljs.stream.take_BANG_.call(null,buf,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037)),((function (backlog,read_start,result__22085__auto___23037,buf,s_SINGLEQUOTE_,period){
+var x23854 = (function (){try{return manifold_cljs.deferred.chain.call(null,manifold_cljs.stream.take_BANG_.call(null,buf,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037)),((function (backlog,read_start,result__22143__auto___23860,buf,s_SINGLEQUOTE_,period){
 return (function (msg){
 if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.stream","none","manifold-cljs.stream/none",-1697743037),msg)){
 manifold_cljs.stream.close_BANG_.call(null,s_SINGLEQUOTE_);
@@ -2753,8 +2753,8 @@ return false;
 } else {
 return manifold_cljs.stream.put_BANG_.call(null,s_SINGLEQUOTE_,msg);
 }
-});})(backlog,read_start,result__22085__auto___23037,buf,s_SINGLEQUOTE_,period))
-,((function (backlog,read_start,result__22085__auto___23037,buf,s_SINGLEQUOTE_,period){
+});})(backlog,read_start,result__22143__auto___23860,buf,s_SINGLEQUOTE_,period))
+,((function (backlog,read_start,result__22143__auto___23860,buf,s_SINGLEQUOTE_,period){
 return (function (result){
 if(cljs.core.truth_(result)){
 var elapsed = (manifold_cljs.time.current_millis.call(null) - read_start);
@@ -2770,76 +2770,76 @@ return manifold_cljs.deferred.timeout_BANG_.call(null,manifold_cljs.deferred.def
 } else {
 return null;
 }
-});})(backlog,read_start,result__22085__auto___23037,buf,s_SINGLEQUOTE_,period))
-,((function (backlog,read_start,result__22085__auto___23037,buf,s_SINGLEQUOTE_,period){
+});})(backlog,read_start,result__22143__auto___23860,buf,s_SINGLEQUOTE_,period))
+,((function (backlog,read_start,result__22143__auto___23860,buf,s_SINGLEQUOTE_,period){
 return (function (backlog__$1){
 if(cljs.core.truth_(backlog__$1)){
 return manifold_cljs.deferred.recur.call(null,backlog__$1,manifold_cljs.time.current_millis.call(null));
 } else {
 return manifold_cljs.stream.close_BANG_.call(null,s_SINGLEQUOTE_);
 }
-});})(backlog,read_start,result__22085__auto___23037,buf,s_SINGLEQUOTE_,period))
+});})(backlog,read_start,result__22143__auto___23860,buf,s_SINGLEQUOTE_,period))
 );
-}catch (e23035){if((e23035 instanceof Error)){
-var e__22087__auto__ = e23035;
-manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,e__22087__auto__);
+}catch (e23858){if((e23858 instanceof Error)){
+var e__22145__auto__ = e23858;
+manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,e__22145__auto__);
 
 return null;
 } else {
-throw e23035;
+throw e23858;
 
 }
 }})();
-if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x23031))){
-var d__22079__auto__ = x23031;
-var val23032 = manifold_cljs.deferred.success_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val23032)){
-var err__22088__auto__ = manifold_cljs.deferred.error_value.call(null,d__22079__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
-if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22088__auto__)){
-return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x23031),((function (backlog,read_start,err__22088__auto__,d__22079__auto__,val23032,x23031,result__22085__auto___23037,buf,s_SINGLEQUOTE_,period){
-return (function (x__22089__auto__){
-if((x__22089__auto__ instanceof manifold_cljs.deferred.Recur)){
-return cljs.core.apply.call(null,manifold_cljs$stream$this__22086__auto__,result__22085__auto____$1,cljs.core.deref.call(null,x__22089__auto__));
+if(cljs.core.truth_(manifold_cljs.deferred.deferred_QMARK_.call(null,x23854))){
+var d__22137__auto__ = x23854;
+var val23855 = manifold_cljs.deferred.success_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),val23855)){
+var err__22146__auto__ = manifold_cljs.deferred.error_value.call(null,d__22137__auto__,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452));
+if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.deferred","none","manifold-cljs.deferred/none",1009740452),err__22146__auto__)){
+return manifold_cljs.deferred.on_realized.call(null,manifold_cljs.deferred.chain_SINGLEQUOTE_.call(null,x23854),((function (backlog,read_start,err__22146__auto__,d__22137__auto__,val23855,x23854,result__22143__auto___23860,buf,s_SINGLEQUOTE_,period){
+return (function (x__22147__auto__){
+if((x__22147__auto__ instanceof manifold_cljs.deferred.Recur)){
+return cljs.core.apply.call(null,manifold_cljs$stream$this__22144__auto__,result__22143__auto____$1,cljs.core.deref.call(null,x__22147__auto__));
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x__22089__auto__);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x__22147__auto__);
 }
-});})(backlog,read_start,err__22088__auto__,d__22079__auto__,val23032,x23031,result__22085__auto___23037,buf,s_SINGLEQUOTE_,period))
-,((function (backlog,read_start,err__22088__auto__,d__22079__auto__,val23032,x23031,result__22085__auto___23037,buf,s_SINGLEQUOTE_,period){
-return (function (err__22088__auto____$1){
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto____$1);
-});})(backlog,read_start,err__22088__auto__,d__22079__auto__,val23032,x23031,result__22085__auto___23037,buf,s_SINGLEQUOTE_,period))
+});})(backlog,read_start,err__22146__auto__,d__22137__auto__,val23855,x23854,result__22143__auto___23860,buf,s_SINGLEQUOTE_,period))
+,((function (backlog,read_start,err__22146__auto__,d__22137__auto__,val23855,x23854,result__22143__auto___23860,buf,s_SINGLEQUOTE_,period){
+return (function (err__22146__auto____$1){
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto____$1);
+});})(backlog,read_start,err__22146__auto__,d__22137__auto__,val23855,x23854,result__22143__auto___23860,buf,s_SINGLEQUOTE_,period))
 );
 } else {
-return manifold_cljs.deferred.error_BANG_.call(null,result__22085__auto____$1,err__22088__auto__);
+return manifold_cljs.deferred.error_BANG_.call(null,result__22143__auto____$1,err__22146__auto__);
 }
 } else {
-if((val23032 instanceof manifold_cljs.deferred.Recur)){
-var val23032__$1 = cljs.core.deref.call(null,val23032);
-var G__23038 = cljs.core.nth.call(null,val23032__$1,(0));
-var G__23039 = cljs.core.nth.call(null,val23032__$1,(1));
-backlog = G__23038;
-read_start = G__23039;
+if((val23855 instanceof manifold_cljs.deferred.Recur)){
+var val23855__$1 = cljs.core.deref.call(null,val23855);
+var G__23861 = cljs.core.nth.call(null,val23855__$1,(0));
+var G__23862 = cljs.core.nth.call(null,val23855__$1,(1));
+backlog = G__23861;
+read_start = G__23862;
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,val23032);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,val23855);
 }
 }
 } else {
-if((x23031 instanceof manifold_cljs.deferred.Recur)){
-var G__23040 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23031),(0));
-var G__23041 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23031),(1));
-backlog = G__23040;
-read_start = G__23041;
+if((x23854 instanceof manifold_cljs.deferred.Recur)){
+var G__23863 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23854),(0));
+var G__23864 = cljs.core.nth.call(null,cljs.core.deref.call(null,x23854),(1));
+backlog = G__23863;
+read_start = G__23864;
 continue;
 } else {
-return manifold_cljs.deferred.success_BANG_.call(null,result__22085__auto____$1,x23031);
+return manifold_cljs.deferred.success_BANG_.call(null,result__22143__auto____$1,x23854);
 
 }
 }
 break;
 }
-});})(result__22085__auto___23037,buf,s_SINGLEQUOTE_,period))
-.call(null,result__22085__auto___23037,0.0,manifold_cljs.time.current_millis.call(null));
+});})(result__22143__auto___23860,buf,s_SINGLEQUOTE_,period))
+.call(null,result__22143__auto___23860,0.0,manifold_cljs.time.current_millis.call(null));
 
 
 return manifold_cljs.stream.source_only.call(null,s_SINGLEQUOTE_);
@@ -2848,4 +2848,4 @@ return manifold_cljs.stream.source_only.call(null,s_SINGLEQUOTE_);
 manifold_cljs.stream.throttle.cljs$lang$maxFixedArity = 3;
 
 
-//# sourceMappingURL=stream.js.map?rel=1557580546960
+//# sourceMappingURL=stream.js.map?rel=1557582877284

@@ -2,8 +2,8 @@
 goog.provide('manifold_cljs.impl.logging');
 goog.require('cljs.core');
 manifold_cljs.impl.logging.error = (function manifold_cljs$impl$logging$error(var_args){
-var G__21795 = arguments.length;
-switch (G__21795) {
+var G__21796 = arguments.length;
+switch (G__21796) {
 case 1:
 return manifold_cljs.impl.logging.error.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -32,4 +32,4 @@ manifold_cljs.impl.logging.warn = (function manifold_cljs$impl$logging$warn(msg)
 return cljs.core.println.call(null,"WARN:",msg);
 });
 
-//# sourceMappingURL=logging.js.map?rel=1557580542535
+//# sourceMappingURL=logging.js.map?rel=1557582870919

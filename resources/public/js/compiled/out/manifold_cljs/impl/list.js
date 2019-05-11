@@ -14,8 +14,8 @@ l.splice(idx,(1));
 } else {
 }
 
-var G__21801 = (idx + (1));
-idx = G__21801;
+var G__21802 = (idx + (1));
+idx = G__21802;
 continue;
 } else {
 return null;
@@ -30,4 +30,4 @@ manifold_cljs.impl.list.add = (function manifold_cljs$impl$list$add(l,item){
 return l.push(item);
 });
 
-//# sourceMappingURL=list.js.map?rel=1557580542593
+//# sourceMappingURL=list.js.map?rel=1557582870951

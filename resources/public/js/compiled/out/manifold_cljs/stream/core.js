@@ -165,8 +165,8 @@ throw cljs.core.missing_protocol.call(null,"IEventStream.close",_);
 manifold_cljs.stream.core.IEventSink = function(){};
 
 manifold_cljs.stream.core.put = (function manifold_cljs$stream$core$put(var_args){
-var G__22329 = arguments.length;
-switch (G__22329) {
+var G__22562 = arguments.length;
+switch (G__22562) {
 case 3:
 return manifold_cljs.stream.core.put.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -286,8 +286,8 @@ throw cljs.core.missing_protocol.call(null,"IEventSink.onClosed",_);
 manifold_cljs.stream.core.IEventSource = function(){};
 
 manifold_cljs.stream.core.take = (function manifold_cljs$stream$core$take(var_args){
-var G__22332 = arguments.length;
-switch (G__22332) {
+var G__22565 = arguments.length;
+switch (G__22565) {
 case 3:
 return manifold_cljs.stream.core.take.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -451,4 +451,4 @@ manifold_cljs.stream.core.synchronous_QMARK_ = (function manifold_cljs$stream$co
 return manifold_cljs.stream.core.isSynchronous.call(null,x);
 });
 
-//# sourceMappingURL=core.js.map?rel=1557580544206
+//# sourceMappingURL=core.js.map?rel=1557582873104

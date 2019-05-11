@@ -64,11 +64,11 @@ var d = manifold_cljs.deferred.default_impl.deferred.call(null,manifold_cljs.exe
 var f__$1 = ((function (d){
 return (function (){
 try{return manifold_cljs.deferred.core.success.call(null,d,f.call(null));
-}catch (e22053){if((e22053 instanceof Error)){
-var e = e22053;
+}catch (e22111){if((e22111 instanceof Error)){
+var e = e22111;
 return manifold_cljs.deferred.core.error.call(null,d,e);
 } else {
-throw e22053;
+throw e22111;
 
 }
 }});})(d))
@@ -86,8 +86,8 @@ return d;
  *   cancelled.
  */
 manifold_cljs.time.every = (function manifold_cljs$time$every(var_args){
-var G__22055 = arguments.length;
-switch (G__22055) {
+var G__22113 = arguments.length;
+switch (G__22113) {
 case 2:
 return manifold_cljs.time.every.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -141,4 +141,4 @@ return ((x__4006__auto__ > y__4007__auto__) ? x__4006__auto__ : y__4007__auto__)
 })(),f);
 });
 
-//# sourceMappingURL=time.js.map?rel=1557580543560
+//# sourceMappingURL=time.js.map?rel=1557582872219

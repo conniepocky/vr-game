@@ -3,24 +3,30 @@
               [manifold-cljs.deferred :as d]
               [reagent.core :as reagent :refer [atom]]))
 
+(def ws (js/WebSocket. "ws://localhost:8080"))
+
+;;192.168.1.255:8080
+
+(def latest-msg (atom ["hi" "hello" "i like food"]))
+
+;;(set! (.-onmessage ws) (fn [msg] 
+;;                         (swap! latest-msg msg)]))
+
 (defn hello-world []
   [:div
+   [:a-assets
+    [:img {:src "https://res.cloudinary.com/dexhx07lb/image/upload/v1557585843/5a4bc99c2da5ad73df7efe66.png" :id "person"}]]
    [:a-scene
-     [:a-box
-       {:color "#4CC3D9", :rotation "0 45 0", :position "-1 0.5 -3"}]
-     [:a-sphere {:color "#EF2D5E", :radius "1.25", :position "0 1.25 -5"}]
-     [:a-cylinder  
-      {:color "#FFC65D",
-       :height "1.5",
-       :radius "0.5",
-       :position "1 0.75 -3"}]
+     [:a-text {:color "black" :value (last @latest-msg)  :position "-1 3 -2"}]
+     [:a-text {:color "black" :value (second @latest-msg) :position "-1 2 -2"}]
+     [:a-text {:color "black" :value (first @latest-msg) :position "-1 1 -2"}]
      [:a-plane
-       {:color "#7BC8A4",
-        :height "4",
-        :width "4",
+       {:color "#BBC0C6",
+        :height "9000",
+        :width "9000",
         :rotation "-90 0 0",
         :position "0 0 -4"}]
-     [:a-sky {:color "#ECECEC"}]]])
+     [:a-sky {:color "white"}]]])
 
 
 (reagent/render-component [hello-world]

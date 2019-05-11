@@ -125,11 +125,11 @@ return null;
 }
 });
 manifold_cljs.stream.graph.handle_async_error = (function manifold_cljs$stream$graph$handle_async_error(x,err,source){
-var G__22341_22342 = x.dst;
-var G__22341_22343__$1 = (((G__22341_22342 == null))?null:G__22341_22342.sink);
-if((G__22341_22343__$1 == null)){
+var G__22629_22630 = x.dst;
+var G__22629_22631__$1 = (((G__22629_22630 == null))?null:G__22629_22630.sink);
+if((G__22629_22631__$1 == null)){
 } else {
-manifold_cljs.stream.core.close_BANG_.call(null,G__22341_22343__$1);
+manifold_cljs.stream.core.close_BANG_.call(null,G__22629_22631__$1);
 }
 
 manifold_cljs.impl.logging.error.call(null,err,"error in message propagation");
@@ -275,59 +275,59 @@ var manifold_cljs$stream$graph$async_connect_$_this__1 = (function (msg){
 if(cljs.core.keyword_identical_QMARK_.call(null,new cljs.core.Keyword("manifold-cljs.stream.graph","drained","manifold-cljs.stream.graph/drained",-33095479),msg)){
 manifold_cljs.stream.graph.handle__GT_downstreams.delete(manifold_cljs.stream.core.weak_handle.call(null,source));
 
-var seq__22344 = cljs.core.seq.call(null,dsts);
-var chunk__22345 = null;
-var count__22346 = (0);
-var i__22347 = (0);
+var seq__22632 = cljs.core.seq.call(null,dsts);
+var chunk__22633 = null;
+var count__22634 = (0);
+var i__22635 = (0);
 while(true){
-if((i__22347 < count__22346)){
-var d = cljs.core._nth.call(null,chunk__22345,i__22347);
+if((i__22635 < count__22634)){
+var d = cljs.core._nth.call(null,chunk__22633,i__22635);
 if(cljs.core.truth_(d.downstream_QMARK_)){
 manifold_cljs.stream.core.close_BANG_.call(null,d.sink);
 } else {
 }
 
 
-var G__22352 = seq__22344;
-var G__22353 = chunk__22345;
-var G__22354 = count__22346;
-var G__22355 = (i__22347 + (1));
-seq__22344 = G__22352;
-chunk__22345 = G__22353;
-count__22346 = G__22354;
-i__22347 = G__22355;
+var G__22640 = seq__22632;
+var G__22641 = chunk__22633;
+var G__22642 = count__22634;
+var G__22643 = (i__22635 + (1));
+seq__22632 = G__22640;
+chunk__22633 = G__22641;
+count__22634 = G__22642;
+i__22635 = G__22643;
 continue;
 } else {
-var temp__5457__auto__ = cljs.core.seq.call(null,seq__22344);
+var temp__5457__auto__ = cljs.core.seq.call(null,seq__22632);
 if(temp__5457__auto__){
-var seq__22344__$1 = temp__5457__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__22344__$1)){
-var c__4319__auto__ = cljs.core.chunk_first.call(null,seq__22344__$1);
-var G__22356 = cljs.core.chunk_rest.call(null,seq__22344__$1);
-var G__22357 = c__4319__auto__;
-var G__22358 = cljs.core.count.call(null,c__4319__auto__);
-var G__22359 = (0);
-seq__22344 = G__22356;
-chunk__22345 = G__22357;
-count__22346 = G__22358;
-i__22347 = G__22359;
+var seq__22632__$1 = temp__5457__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__22632__$1)){
+var c__4319__auto__ = cljs.core.chunk_first.call(null,seq__22632__$1);
+var G__22644 = cljs.core.chunk_rest.call(null,seq__22632__$1);
+var G__22645 = c__4319__auto__;
+var G__22646 = cljs.core.count.call(null,c__4319__auto__);
+var G__22647 = (0);
+seq__22632 = G__22644;
+chunk__22633 = G__22645;
+count__22634 = G__22646;
+i__22635 = G__22647;
 continue;
 } else {
-var d = cljs.core.first.call(null,seq__22344__$1);
+var d = cljs.core.first.call(null,seq__22632__$1);
 if(cljs.core.truth_(d.downstream_QMARK_)){
 manifold_cljs.stream.core.close_BANG_.call(null,d.sink);
 } else {
 }
 
 
-var G__22360 = cljs.core.next.call(null,seq__22344__$1);
-var G__22361 = null;
-var G__22362 = (0);
-var G__22363 = (0);
-seq__22344 = G__22360;
-chunk__22345 = G__22361;
-count__22346 = G__22362;
-i__22347 = G__22363;
+var G__22648 = cljs.core.next.call(null,seq__22632__$1);
+var G__22649 = null;
+var G__22650 = (0);
+var G__22651 = (0);
+seq__22632 = G__22648;
+chunk__22633 = G__22649;
+count__22634 = G__22650;
+i__22635 = G__22651;
 continue;
 }
 } else {
@@ -367,61 +367,61 @@ manifold_cljs.stream.core.close_BANG_.call(null,source);
 
 return manifold_cljs.stream.graph.handle__GT_downstreams.delete(manifold_cljs.stream.core.weak_handle.call(null,source));
 } else {
-var seq__22348_22364 = cljs.core.seq.call(null,dsts);
-var chunk__22349_22365 = null;
-var count__22350_22366 = (0);
-var i__22351_22367 = (0);
+var seq__22636_22652 = cljs.core.seq.call(null,dsts);
+var chunk__22637_22653 = null;
+var count__22638_22654 = (0);
+var i__22639_22655 = (0);
 while(true){
-if((i__22351_22367 < count__22350_22366)){
-var d_22368 = cljs.core._nth.call(null,chunk__22349_22365,i__22351_22367);
-if(cljs.core.truth_(manifold_cljs.stream.core.synchronous_QMARK_.call(null,d_22368.sink))){
-manifold_cljs.impl.list.add.call(null,sync_sinks,d_22368);
+if((i__22639_22655 < count__22638_22654)){
+var d_22656 = cljs.core._nth.call(null,chunk__22637_22653,i__22639_22655);
+if(cljs.core.truth_(manifold_cljs.stream.core.synchronous_QMARK_.call(null,d_22656.sink))){
+manifold_cljs.impl.list.add.call(null,sync_sinks,d_22656);
 } else {
-manifold_cljs.impl.list.add.call(null,deferreds,manifold_cljs.stream.graph.async_send.call(null,d_22368,msg,dsts));
+manifold_cljs.impl.list.add.call(null,deferreds,manifold_cljs.stream.graph.async_send.call(null,d_22656,msg,dsts));
 }
 
 
-var G__22369 = seq__22348_22364;
-var G__22370 = chunk__22349_22365;
-var G__22371 = count__22350_22366;
-var G__22372 = (i__22351_22367 + (1));
-seq__22348_22364 = G__22369;
-chunk__22349_22365 = G__22370;
-count__22350_22366 = G__22371;
-i__22351_22367 = G__22372;
+var G__22657 = seq__22636_22652;
+var G__22658 = chunk__22637_22653;
+var G__22659 = count__22638_22654;
+var G__22660 = (i__22639_22655 + (1));
+seq__22636_22652 = G__22657;
+chunk__22637_22653 = G__22658;
+count__22638_22654 = G__22659;
+i__22639_22655 = G__22660;
 continue;
 } else {
-var temp__5457__auto___22373 = cljs.core.seq.call(null,seq__22348_22364);
-if(temp__5457__auto___22373){
-var seq__22348_22374__$1 = temp__5457__auto___22373;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__22348_22374__$1)){
-var c__4319__auto___22375 = cljs.core.chunk_first.call(null,seq__22348_22374__$1);
-var G__22376 = cljs.core.chunk_rest.call(null,seq__22348_22374__$1);
-var G__22377 = c__4319__auto___22375;
-var G__22378 = cljs.core.count.call(null,c__4319__auto___22375);
-var G__22379 = (0);
-seq__22348_22364 = G__22376;
-chunk__22349_22365 = G__22377;
-count__22350_22366 = G__22378;
-i__22351_22367 = G__22379;
+var temp__5457__auto___22661 = cljs.core.seq.call(null,seq__22636_22652);
+if(temp__5457__auto___22661){
+var seq__22636_22662__$1 = temp__5457__auto___22661;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__22636_22662__$1)){
+var c__4319__auto___22663 = cljs.core.chunk_first.call(null,seq__22636_22662__$1);
+var G__22664 = cljs.core.chunk_rest.call(null,seq__22636_22662__$1);
+var G__22665 = c__4319__auto___22663;
+var G__22666 = cljs.core.count.call(null,c__4319__auto___22663);
+var G__22667 = (0);
+seq__22636_22652 = G__22664;
+chunk__22637_22653 = G__22665;
+count__22638_22654 = G__22666;
+i__22639_22655 = G__22667;
 continue;
 } else {
-var d_22380 = cljs.core.first.call(null,seq__22348_22374__$1);
-if(cljs.core.truth_(manifold_cljs.stream.core.synchronous_QMARK_.call(null,d_22380.sink))){
-manifold_cljs.impl.list.add.call(null,sync_sinks,d_22380);
+var d_22668 = cljs.core.first.call(null,seq__22636_22662__$1);
+if(cljs.core.truth_(manifold_cljs.stream.core.synchronous_QMARK_.call(null,d_22668.sink))){
+manifold_cljs.impl.list.add.call(null,sync_sinks,d_22668);
 } else {
-manifold_cljs.impl.list.add.call(null,deferreds,manifold_cljs.stream.graph.async_send.call(null,d_22380,msg,dsts));
+manifold_cljs.impl.list.add.call(null,deferreds,manifold_cljs.stream.graph.async_send.call(null,d_22668,msg,dsts));
 }
 
 
-var G__22381 = cljs.core.next.call(null,seq__22348_22374__$1);
-var G__22382 = null;
-var G__22383 = (0);
-var G__22384 = (0);
-seq__22348_22364 = G__22381;
-chunk__22349_22365 = G__22382;
-count__22350_22366 = G__22383;
-i__22351_22367 = G__22384;
+var G__22669 = cljs.core.next.call(null,seq__22636_22662__$1);
+var G__22670 = null;
+var G__22671 = (0);
+var G__22672 = (0);
+seq__22636_22652 = G__22669;
+chunk__22637_22653 = G__22670;
+count__22638_22654 = G__22671;
+i__22639_22655 = G__22672;
 continue;
 }
 } else {
@@ -452,14 +452,14 @@ return manifold_cljs$stream$graph$async_connect_$_this;
 ;})(sync_sinks,deferreds,sync_propagate,async_propagate,err_callback))
 );
 });
-manifold_cljs.stream.graph.connect = (function manifold_cljs$stream$graph$connect(src,dst,p__22385){
-var map__22386 = p__22385;
-var map__22386__$1 = ((((!((map__22386 == null)))?(((((map__22386.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__22386.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__22386):map__22386);
-var opts = map__22386__$1;
-var upstream_QMARK_ = cljs.core.get.call(null,map__22386__$1,new cljs.core.Keyword(null,"upstream?","upstream?",1534482703),false);
-var downstream_QMARK_ = cljs.core.get.call(null,map__22386__$1,new cljs.core.Keyword(null,"downstream?","downstream?",-497580188),true);
-var timeout = cljs.core.get.call(null,map__22386__$1,new cljs.core.Keyword(null,"timeout","timeout",-318625318),(-1));
-var description = cljs.core.get.call(null,map__22386__$1,new cljs.core.Keyword(null,"description","description",-1428560544));
+manifold_cljs.stream.graph.connect = (function manifold_cljs$stream$graph$connect(src,dst,p__22673){
+var map__22674 = p__22673;
+var map__22674__$1 = ((((!((map__22674 == null)))?(((((map__22674.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__22674.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__22674):map__22674);
+var opts = map__22674__$1;
+var upstream_QMARK_ = cljs.core.get.call(null,map__22674__$1,new cljs.core.Keyword(null,"upstream?","upstream?",1534482703),false);
+var downstream_QMARK_ = cljs.core.get.call(null,map__22674__$1,new cljs.core.Keyword(null,"downstream?","downstream?",-497580188),true);
+var timeout = cljs.core.get.call(null,map__22674__$1,new cljs.core.Keyword(null,"timeout","timeout",-318625318),(-1));
+var description = cljs.core.get.call(null,map__22674__$1,new cljs.core.Keyword(null,"description","description",-1428560544));
 var d = (new manifold_cljs.stream.graph.Downstream(timeout,cljs.core.boolean$.call(null,(function (){var and__3911__auto__ = upstream_QMARK_;
 if(cljs.core.truth_(and__3911__auto__)){
 if(!((src == null))){
@@ -498,4 +498,4 @@ return manifold_cljs.stream.graph.async_connect.call(null,src,dsts);
 }
 });
 
-//# sourceMappingURL=graph.js.map?rel=1557580544387
+//# sourceMappingURL=graph.js.map?rel=1557582873377

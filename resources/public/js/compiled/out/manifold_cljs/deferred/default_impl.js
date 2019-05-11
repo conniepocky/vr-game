@@ -45,21 +45,21 @@ var self__ = this;
 var ___$1 = this;
 self__.consumed_QMARK_ = true;
 
-var temp__5457__auto___21859 = (function (){var pred__21848 = cljs.core.keyword_identical_QMARK_;
-var expr__21849 = self__.state;
-if(cljs.core.truth_(pred__21848.call(null,new cljs.core.Keyword("manifold-cljs.deferred.default-impl","success","manifold-cljs.deferred.default-impl/success",1668665878),expr__21849))){
-return ((function (pred__21848,expr__21849,___$1){
+var temp__5457__auto___21899 = (function (){var pred__21888 = cljs.core.keyword_identical_QMARK_;
+var expr__21889 = self__.state;
+if(cljs.core.truth_(pred__21888.call(null,new cljs.core.Keyword("manifold-cljs.deferred.default-impl","success","manifold-cljs.deferred.default-impl/success",1668665878),expr__21889))){
+return ((function (pred__21888,expr__21889,___$1){
 return (function (){
 return manifold_cljs.deferred.core.onSuccess.call(null,listener,self__.val);
 });
-;})(pred__21848,expr__21849,___$1))
+;})(pred__21888,expr__21889,___$1))
 } else {
-if(cljs.core.truth_(pred__21848.call(null,new cljs.core.Keyword("manifold-cljs.deferred.default-impl","error","manifold-cljs.deferred.default-impl/error",-900136268),expr__21849))){
-return ((function (pred__21848,expr__21849,___$1){
+if(cljs.core.truth_(pred__21888.call(null,new cljs.core.Keyword("manifold-cljs.deferred.default-impl","error","manifold-cljs.deferred.default-impl/error",-900136268),expr__21889))){
+return ((function (pred__21888,expr__21889,___$1){
 return (function (){
 return manifold_cljs.deferred.core.onError.call(null,listener,self__.val);
 });
-;})(pred__21848,expr__21849,___$1))
+;})(pred__21888,expr__21889,___$1))
 } else {
 manifold_cljs.impl.list.add.call(null,self__.listeners,listener);
 
@@ -67,12 +67,12 @@ return null;
 }
 }
 })();
-if(cljs.core.truth_(temp__5457__auto___21859)){
-var f_21860 = temp__5457__auto___21859;
+if(cljs.core.truth_(temp__5457__auto___21899)){
+var f_21900 = temp__5457__auto___21899;
 if(cljs.core.truth_(self__.executor)){
-manifold_cljs.executor.execute.call(null,self__.executor,f_21860);
+manifold_cljs.executor.execute.call(null,self__.executor,f_21900);
 } else {
-f_21860.call(null);
+f_21900.call(null);
 }
 } else {
 }
@@ -103,30 +103,30 @@ return true;
 })()
 :null))){
 while(true){
-var temp__5457__auto___21861 = manifold_cljs.impl.queue.poll.call(null,self__.listeners);
-if(cljs.core.truth_(temp__5457__auto___21861)){
-var l__21833__auto___21862 = temp__5457__auto___21861;
+var temp__5457__auto___21901 = manifold_cljs.impl.queue.poll.call(null,self__.listeners);
+if(cljs.core.truth_(temp__5457__auto___21901)){
+var l__21834__auto___21902 = temp__5457__auto___21901;
 try{if((self__.executor == null)){
-manifold_cljs.deferred.core.onSuccess.call(null,l__21833__auto___21862,x);
+manifold_cljs.deferred.core.onSuccess.call(null,l__21834__auto___21902,x);
 } else {
-manifold_cljs.executor.execute.call(null,self__.executor,((function (l__21833__auto___21862,temp__5457__auto___21861,___$1){
+manifold_cljs.executor.execute.call(null,self__.executor,((function (l__21834__auto___21902,temp__5457__auto___21901,___$1){
 return (function (){
-try{return manifold_cljs.deferred.core.onSuccess.call(null,l__21833__auto___21862,x);
-}catch (e21852){if((e21852 instanceof Error)){
-var e__21834__auto__ = e21852;
-return manifold_cljs.impl.logging.error.call(null,e__21834__auto__,"error in deferred handler");
+try{return manifold_cljs.deferred.core.onSuccess.call(null,l__21834__auto___21902,x);
+}catch (e21892){if((e21892 instanceof Error)){
+var e__21835__auto__ = e21892;
+return manifold_cljs.impl.logging.error.call(null,e__21835__auto__,"error in deferred handler");
 } else {
-throw e21852;
+throw e21892;
 
 }
-}});})(l__21833__auto___21862,temp__5457__auto___21861,___$1))
+}});})(l__21834__auto___21902,temp__5457__auto___21901,___$1))
 );
 }
-}catch (e21851){if((e21851 instanceof Error)){
-var e__21834__auto___21863 = e21851;
-manifold_cljs.impl.logging.error.call(null,e__21834__auto___21863,"error in deferred handler");
+}catch (e21891){if((e21891 instanceof Error)){
+var e__21835__auto___21903 = e21891;
+manifold_cljs.impl.logging.error.call(null,e__21835__auto___21903,"error in deferred handler");
 } else {
-throw e21851;
+throw e21891;
 
 }
 }
@@ -154,30 +154,30 @@ return true;
 })()
 :null))){
 while(true){
-var temp__5457__auto___21864 = manifold_cljs.impl.queue.poll.call(null,self__.listeners);
-if(cljs.core.truth_(temp__5457__auto___21864)){
-var l__21833__auto___21865 = temp__5457__auto___21864;
+var temp__5457__auto___21904 = manifold_cljs.impl.queue.poll.call(null,self__.listeners);
+if(cljs.core.truth_(temp__5457__auto___21904)){
+var l__21834__auto___21905 = temp__5457__auto___21904;
 try{if((self__.executor == null)){
-manifold_cljs.deferred.core.onSuccess.call(null,l__21833__auto___21865,x);
+manifold_cljs.deferred.core.onSuccess.call(null,l__21834__auto___21905,x);
 } else {
-manifold_cljs.executor.execute.call(null,self__.executor,((function (l__21833__auto___21865,temp__5457__auto___21864,___$1){
+manifold_cljs.executor.execute.call(null,self__.executor,((function (l__21834__auto___21905,temp__5457__auto___21904,___$1){
 return (function (){
-try{return manifold_cljs.deferred.core.onSuccess.call(null,l__21833__auto___21865,x);
-}catch (e21854){if((e21854 instanceof Error)){
-var e__21834__auto__ = e21854;
-return manifold_cljs.impl.logging.error.call(null,e__21834__auto__,"error in deferred handler");
+try{return manifold_cljs.deferred.core.onSuccess.call(null,l__21834__auto___21905,x);
+}catch (e21894){if((e21894 instanceof Error)){
+var e__21835__auto__ = e21894;
+return manifold_cljs.impl.logging.error.call(null,e__21835__auto__,"error in deferred handler");
 } else {
-throw e21854;
+throw e21894;
 
 }
-}});})(l__21833__auto___21865,temp__5457__auto___21864,___$1))
+}});})(l__21834__auto___21905,temp__5457__auto___21904,___$1))
 );
 }
-}catch (e21853){if((e21853 instanceof Error)){
-var e__21834__auto___21866 = e21853;
-manifold_cljs.impl.logging.error.call(null,e__21834__auto___21866,"error in deferred handler");
+}catch (e21893){if((e21893 instanceof Error)){
+var e__21835__auto___21906 = e21893;
+manifold_cljs.impl.logging.error.call(null,e__21835__auto___21906,"error in deferred handler");
 } else {
-throw e21853;
+throw e21893;
 
 }
 }
@@ -205,30 +205,30 @@ return true;
 })()
 :null))){
 while(true){
-var temp__5457__auto___21867 = manifold_cljs.impl.queue.poll.call(null,self__.listeners);
-if(cljs.core.truth_(temp__5457__auto___21867)){
-var l__21833__auto___21868 = temp__5457__auto___21867;
+var temp__5457__auto___21907 = manifold_cljs.impl.queue.poll.call(null,self__.listeners);
+if(cljs.core.truth_(temp__5457__auto___21907)){
+var l__21834__auto___21908 = temp__5457__auto___21907;
 try{if((self__.executor == null)){
-manifold_cljs.deferred.core.onError.call(null,l__21833__auto___21868,x);
+manifold_cljs.deferred.core.onError.call(null,l__21834__auto___21908,x);
 } else {
-manifold_cljs.executor.execute.call(null,self__.executor,((function (l__21833__auto___21868,temp__5457__auto___21867,___$1){
+manifold_cljs.executor.execute.call(null,self__.executor,((function (l__21834__auto___21908,temp__5457__auto___21907,___$1){
 return (function (){
-try{return manifold_cljs.deferred.core.onError.call(null,l__21833__auto___21868,x);
-}catch (e21856){if((e21856 instanceof Error)){
-var e__21834__auto__ = e21856;
-return manifold_cljs.impl.logging.error.call(null,e__21834__auto__,"error in deferred handler");
+try{return manifold_cljs.deferred.core.onError.call(null,l__21834__auto___21908,x);
+}catch (e21896){if((e21896 instanceof Error)){
+var e__21835__auto__ = e21896;
+return manifold_cljs.impl.logging.error.call(null,e__21835__auto__,"error in deferred handler");
 } else {
-throw e21856;
+throw e21896;
 
 }
-}});})(l__21833__auto___21868,temp__5457__auto___21867,___$1))
+}});})(l__21834__auto___21908,temp__5457__auto___21907,___$1))
 );
 }
-}catch (e21855){if((e21855 instanceof Error)){
-var e__21834__auto___21869 = e21855;
-manifold_cljs.impl.logging.error.call(null,e__21834__auto___21869,"error in deferred handler");
+}catch (e21895){if((e21895 instanceof Error)){
+var e__21835__auto___21909 = e21895;
+manifold_cljs.impl.logging.error.call(null,e__21835__auto___21909,"error in deferred handler");
 } else {
-throw e21855;
+throw e21895;
 
 }
 }
@@ -256,30 +256,30 @@ return true;
 })()
 :null))){
 while(true){
-var temp__5457__auto___21870 = manifold_cljs.impl.queue.poll.call(null,self__.listeners);
-if(cljs.core.truth_(temp__5457__auto___21870)){
-var l__21833__auto___21871 = temp__5457__auto___21870;
+var temp__5457__auto___21910 = manifold_cljs.impl.queue.poll.call(null,self__.listeners);
+if(cljs.core.truth_(temp__5457__auto___21910)){
+var l__21834__auto___21911 = temp__5457__auto___21910;
 try{if((self__.executor == null)){
-manifold_cljs.deferred.core.onError.call(null,l__21833__auto___21871,x);
+manifold_cljs.deferred.core.onError.call(null,l__21834__auto___21911,x);
 } else {
-manifold_cljs.executor.execute.call(null,self__.executor,((function (l__21833__auto___21871,temp__5457__auto___21870,___$1){
+manifold_cljs.executor.execute.call(null,self__.executor,((function (l__21834__auto___21911,temp__5457__auto___21910,___$1){
 return (function (){
-try{return manifold_cljs.deferred.core.onError.call(null,l__21833__auto___21871,x);
-}catch (e21858){if((e21858 instanceof Error)){
-var e__21834__auto__ = e21858;
-return manifold_cljs.impl.logging.error.call(null,e__21834__auto__,"error in deferred handler");
+try{return manifold_cljs.deferred.core.onError.call(null,l__21834__auto___21911,x);
+}catch (e21898){if((e21898 instanceof Error)){
+var e__21835__auto__ = e21898;
+return manifold_cljs.impl.logging.error.call(null,e__21835__auto__,"error in deferred handler");
 } else {
-throw e21858;
+throw e21898;
 
 }
-}});})(l__21833__auto___21871,temp__5457__auto___21870,___$1))
+}});})(l__21834__auto___21911,temp__5457__auto___21910,___$1))
 );
 }
-}catch (e21857){if((e21857 instanceof Error)){
-var e__21834__auto___21872 = e21857;
-manifold_cljs.impl.logging.error.call(null,e__21834__auto___21872,"error in deferred handler");
+}catch (e21897){if((e21897 instanceof Error)){
+var e__21835__auto___21912 = e21897;
+manifold_cljs.impl.logging.error.call(null,e__21835__auto___21912,"error in deferred handler");
 } else {
-throw e21857;
+throw e21897;
 
 }
 }
@@ -306,10 +306,10 @@ return null;
 }
 });
 
-manifold_cljs.deferred.default_impl.Deferred.prototype.apply = (function (self__,args21847){
+manifold_cljs.deferred.default_impl.Deferred.prototype.apply = (function (self__,args21887){
 var self__ = this;
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args21847)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args21887)));
 });
 
 manifold_cljs.deferred.default_impl.Deferred.prototype.cljs$core$IFn$_invoke$arity$1 = (function (x){
@@ -488,10 +488,10 @@ var this$ = self____$1;
 return null;
 });
 
-manifold_cljs.deferred.default_impl.SuccessDeferred.prototype.apply = (function (self__,args21873){
+manifold_cljs.deferred.default_impl.SuccessDeferred.prototype.apply = (function (self__,args21913){
 var self__ = this;
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args21873)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args21913)));
 });
 
 manifold_cljs.deferred.default_impl.SuccessDeferred.prototype.cljs$core$IFn$_invoke$arity$1 = (function (x){
@@ -642,10 +642,10 @@ var this$ = self____$1;
 return null;
 });
 
-manifold_cljs.deferred.default_impl.ErrorDeferred.prototype.apply = (function (self__,args21874){
+manifold_cljs.deferred.default_impl.ErrorDeferred.prototype.apply = (function (self__,args21914){
 var self__ = this;
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args21874)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args21914)));
 });
 
 manifold_cljs.deferred.default_impl.ErrorDeferred.prototype.cljs$core$IFn$_invoke$arity$1 = (function (x){
@@ -742,8 +742,8 @@ manifold_cljs.deferred.default_impl.nil_deferred_ = (new manifold_cljs.deferred.
  * A deferred which already contains a realized value
  */
 manifold_cljs.deferred.default_impl.success_deferred = (function manifold_cljs$deferred$default_impl$success_deferred(var_args){
-var G__21876 = arguments.length;
-switch (G__21876) {
+var G__21916 = arguments.length;
+switch (G__21916) {
 case 1:
 return manifold_cljs.deferred.default_impl.success_deferred.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -764,15 +764,15 @@ return manifold_cljs.deferred.default_impl.success_deferred.call(null,val,manifo
 
 manifold_cljs.deferred.default_impl.success_deferred.cljs$core$IFn$_invoke$arity$2 = (function (val,executor){
 if((executor === manifold_cljs.executor.default_executor)){
-var pred__21877 = cljs.core._EQ_;
-var expr__21878 = val;
-if(cljs.core.truth_(pred__21877.call(null,true,expr__21878))){
+var pred__21917 = cljs.core._EQ_;
+var expr__21918 = val;
+if(cljs.core.truth_(pred__21917.call(null,true,expr__21918))){
 return manifold_cljs.deferred.default_impl.true_deferred_;
 } else {
-if(cljs.core.truth_(pred__21877.call(null,false,expr__21878))){
+if(cljs.core.truth_(pred__21917.call(null,false,expr__21918))){
 return manifold_cljs.deferred.default_impl.false_deferred_;
 } else {
-if(cljs.core.truth_(pred__21877.call(null,null,expr__21878))){
+if(cljs.core.truth_(pred__21917.call(null,null,expr__21918))){
 return manifold_cljs.deferred.default_impl.nil_deferred_;
 } else {
 return (new manifold_cljs.deferred.default_impl.SuccessDeferred(val,executor));
@@ -790,8 +790,8 @@ manifold_cljs.deferred.default_impl.success_deferred.cljs$lang$maxFixedArity = 2
  * A deferred which already contains a realized error
  */
 manifold_cljs.deferred.default_impl.error_deferred = (function manifold_cljs$deferred$default_impl$error_deferred(var_args){
-var G__21882 = arguments.length;
-switch (G__21882) {
+var G__21922 = arguments.length;
+switch (G__21922) {
 case 1:
 return manifold_cljs.deferred.default_impl.error_deferred.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -820,4 +820,4 @@ manifold_cljs.deferred.default_impl.deferred = (function manifold_cljs$deferred$
 return (new manifold_cljs.deferred.default_impl.Deferred(null,new cljs.core.Keyword("manifold-cljs.deferred.default-impl","unset","manifold-cljs.deferred.default-impl/unset",379770298),null,manifold_cljs.impl.list.list.call(null),false,executor));
 });
 
-//# sourceMappingURL=default_impl.js.map?rel=1557580542894
+//# sourceMappingURL=default_impl.js.map?rel=1557582871442

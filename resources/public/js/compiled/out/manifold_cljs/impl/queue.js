@@ -20,4 +20,4 @@ manifold_cljs.impl.queue.empty_QMARK_ = (function manifold_cljs$impl$queue$empty
 return (cljs.core.count.call(null,q) === (0));
 });
 
-//# sourceMappingURL=queue.js.map?rel=1557580542553
+//# sourceMappingURL=queue.js.map?rel=1557582870933
