@@ -15,4 +15,4 @@
     (sub! s)
     (s/connect s broadcast-s)))
 
-(defonce server (http/start-server #'echo-handler {:port 8080}))
+(defonce server (http/start-server #'echo-handler {:port 8081}))
