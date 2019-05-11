@@ -1,30 +1,18 @@
 (ns vr-game.server
-  (:require [org.httpkit.server :as kit :refer :all]))
+  (:require [manifold.stream :as s]
+            [aleph.http :as http]))
 
-(def users (atom #{}))
+(def broadcast-subscribers (atom #{}))
+(def broadcast-s (s/stream))
+(s/consume (fn [msg]
+             (doseq [sub @broadcast-subscribers]
+               (s/put! sub msg)))
+           broadcast-s)
+(defn sub! [stream] (swap! broadcast-subscribers conj stream))
 
-(defn app [req]
-  {:status  200
-   :headers {"Content-Type" "text/html"}
-   :body    "Hello HTTP!"})
+(defn echo-handler [req]
+  (let [s @(http/websocket-connection req)]
+    (sub! s)
+    (s/connect s broadcast-s)))
 
-(defn -main []
-  (kit/run-server app {:port 8080}))
-
-(defn handler [req]
-   (with-channel req channel              ; get the channel
-    ;; communicate with client using method defined above
-    (swap! users conj channel)
-    (on-close channel (fn [status]
-                        (println "channel closed")))
-    (if (websocket? channel)
-      (println "WebSocket channel")
-      (println "HTTP channel"))
-    (on-receive channel (fn [data]       ; data received from client
-           ;; An optional param can pass to send!: close-after-send?
-           ;; When unspecified, `close-after-send?` defaults to true for HTTP channels
-           ;; and false for WebSocket.  (send! channel data close-after-send?)
-                          (send! channel data))))) ; data is sent directly to the client
-(run-server handler {:port 8080})
-
-
+(defonce server (http/start-server #'echo-handler {:port 8080}))
