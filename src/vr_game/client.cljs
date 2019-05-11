@@ -5,19 +5,19 @@
 
 ;;192.168.1.255:8080
 
-(def latest-msg (atom ["hi" "hello" "i like food"]))
+(def msgs (atom ["hi" "hello" "i like food"]))
 
-;;(set! (.-onmessage ws) (fn [msg] 
-;;                         (swap! latest-msg msg)]))
+(set! (.-onmessage ws) (fn [msg] 
+                         (swap! msgs conj msg)))
 
 (defn hello-world []
   [:div
    [:a-assets
     [:img {:src "https://res.cloudinary.com/dexhx07lb/image/upload/v1557585843/5a4bc99c2da5ad73df7efe66.png" :id "person"}]]
    [:a-scene
-    [:a-text {:color "black" :value (last @latest-msg)  :position "-1 3 -2"}]
-    [:a-text {:color "black" :value (second @latest-msg) :position "-1 2 -2"}]
-    [:a-text {:color "black" :value (first @latest-msg) :position "-1 1 -2"}]
+    (for [msg @msgs]
+      (def i (dec i))
+      [:a-text {:color "black" :value  msg  :position (str "-1 " i " -2")}])
     [:a-plane
      {:color "#BBC0C6",
       :height "9000",
