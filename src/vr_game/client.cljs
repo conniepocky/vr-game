@@ -1,11 +1,11 @@
 (ns vr-game.client
   (:require [reagent.core :as reagent :refer [atom]]))
 
-(def ws (js/WebSocket. "ws://localhost:8081"))
+(defonce ws (js/WebSocket. "ws://192.168.1.227:8081"))
 
 ;;192.168.1.255:8080
 
-(def msgs (atom ["hi" "hello" "i like food"]))
+(def msgs (atom ["hello there" "there is a field at the bottom" "and you are strictly prohibited to touch type and hit 'enter' on it!"]))
 
 (set! (.-onmessage ws) (fn [msg]
                          (swap! msgs conj (.-data msg))))
@@ -17,15 +17,24 @@
    [:a-scene
     (map-indexed (fn [idx msg]
                    ^{:key idx} ;; supply id for each element, a way to tell ReactJS their edentity for lifecycle stuff ~_~
-                   [:a-text {:color "black" :value  msg  :position (str "-1 " (/ idx 3) " -2")}])
+                   [:a-text {:color "black" :value  msg  :position (str "-1 " (+ (/ idx 3) 1) " -2")}])
                  @msgs)
     [:a-plane
      {:color "#BBC0C6",
       :height "9000",
-      :width "9000", 
+      :width "9000",
       :rotation "-90 0 0",
       :position "0 0 -4"}]
-    [:a-sky {:color "white"}]]])
+    [:a-sky {:color "white"}]]
+   [:input#input-field {:style {:position "fixed"
+                                :bottom "0px"}
+                        :on-key-press (fn [dom-event]
+                                        (println "DUH:" dom-event)
+                                        (when (= "Enter" (.-key dom-event))
+                                          (let [field (.getElementById js/document "input-field")]
+                                            (.send ws (.-value field))
+                                            (set! (.-value field) ""))))}]
+   ])
 
 
 (reagent/render-component [hello-world]
