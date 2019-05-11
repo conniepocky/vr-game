@@ -25,6 +25,7 @@
       :rotation "-90 0 0",
       :position "0 0 -4"}]
     [:a-sky {:color "white"}]]])
+            
 
 
 (reagent/render-component [hello-world]
