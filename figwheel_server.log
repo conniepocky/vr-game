@@ -1,0 +1,38 @@
+Compiling build :dev to "resources/public/js/compiled/vr_game.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/vr_game.js" in 0.622 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/vr_game/core.js
+Compiling build :dev to "resources/public/js/compiled/vr_game.js" from ["src"]...
+[36m----  Compiler Warning on   src/vr_game/core.cljs   line:6  column:17  ----[0m
+
+  [1mUse of undeclared Var vr-game.core/app-state[0m
+
+  [36m 2[0m  [36m    (:require [reagent.core :as reagent :refer [atom]]))[0m
+  [36m 3[0m  [36m[0m
+  [36m 4[0m  [36m(defn hello-world [][0m
+  [36m 5[0m  [36m  [:div[0m
+  [33m 6[0m  [1m   [:h1 (:text @app-state)][0m
+  [0m  [0m  [33m                ^--- Use of undeclared Var vr-game.core/app-state[0m
+  [36m 7[0m  [36m   [:h3 "Edit this and watch it change!"]])[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m(reagent/render-component [hello-world][0m
+  [36m10[0m  [36m                          (. js/document (getElementById "app")))[0m
+
+[36m----  Compiler Warning : Please see src/vr_game/core.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/vr_game.js" in 0.603 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/vr_game/core.js
+Compiling build :dev to "resources/public/js/compiled/vr_game.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/vr_game.js" in 0.505 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/vr_game/core.js
+Compiling build :dev to "resources/public/js/compiled/vr_game.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/vr_game.js" in 0.541 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/vr_game/core.js
+Compiling build :dev to "resources/public/js/compiled/vr_game.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/vr_game.js" in 0.845 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/vr_game/core.js
+Compiling build :dev to "resources/public/js/compiled/vr_game.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/vr_game.js" in 0.707 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/vr_game/core.js
