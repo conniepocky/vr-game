@@ -1,3 +1,4 @@
 {:deps {org.clojure/clojure {:mvn/version "1.10.1-beta2"}
-        aleph {:mvn/version "0.}
- :paths ["src" "dev"]}
+        aleph               {:mvn/version "0.4.6"}
+        reagent             {:mvn/version "0.8.1"}}
+ :paths ["src" "dev" "resources" "target"]}
