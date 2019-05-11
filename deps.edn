@@ -1,2 +1,3 @@
 {:deps {http-kit {:mvn/version "2.3.0"}}
- :main vr-game.server}
+ :main vr-game.server
+ :paths ["src" "dev"]}

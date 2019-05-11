@@ -1,7 +1,7 @@
 (ns vr-game.server
-  (:require [org.httpkit.server :as kit]))
+  (:require [org.httpkit.server :as kit :refer :all]))
 
-(def users (atom (set )))
+(def users (atom #{}))
 
 (defn app [req]
   {:status  200
